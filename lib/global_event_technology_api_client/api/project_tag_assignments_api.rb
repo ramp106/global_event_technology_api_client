@@ -23,7 +23,7 @@ module GlobalEventTechnologyApiClient
     # @param [Hash] opts the optional parameters
     # @option opts [Integer] :limit 
     # @option opts [String] :_next 
-    # @option opts [String] :barcode 
+    # @option opts [String] :external_ticket_id 
     # @return [ArrayResultOfTagAssignmentModel]
     def project_tag_assignments_get_all(project_id, opts = {})
       data, _status_code, _headers = project_tag_assignments_get_all_with_http_info(project_id, opts)
@@ -34,7 +34,7 @@ module GlobalEventTechnologyApiClient
     # @param [Hash] opts the optional parameters
     # @option opts [Integer] :limit 
     # @option opts [String] :_next 
-    # @option opts [String] :barcode 
+    # @option opts [String] :external_ticket_id 
     # @return [Array<(ArrayResultOfTagAssignmentModel, Fixnum, Hash)>] ArrayResultOfTagAssignmentModel data, response status code and response headers
     def project_tag_assignments_get_all_with_http_info(project_id, opts = {})
       if @api_client.config.debugging
@@ -51,7 +51,7 @@ module GlobalEventTechnologyApiClient
       query_params = {}
       query_params[:'limit'] = opts[:'limit'] if !opts[:'limit'].nil?
       query_params[:'next'] = opts[:'_next'] if !opts[:'_next'].nil?
-      query_params[:'barcode'] = opts[:'barcode'] if !opts[:'barcode'].nil?
+      query_params[:'externalTicketId'] = opts[:'external_ticket_id'] if !opts[:'external_ticket_id'].nil?
 
       # header parameters
       header_params = {}

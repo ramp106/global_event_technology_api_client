@@ -5,7 +5,7 @@ All URIs are relative to *https://localhost*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**project_sites_create_or_update**](ProjectSitesApi.md#project_sites_create_or_update) | **PUT** /projects/{projectId}/sites/{siteId} | 
-[**project_sites_delete_area**](ProjectSitesApi.md#project_sites_delete_area) | **DELETE** /projects/{projectId}/sites/{siteId} | 
+[**project_sites_delete_site**](ProjectSitesApi.md#project_sites_delete_site) | **DELETE** /projects/{projectId}/sites/{siteId} | 
 [**project_sites_get_all**](ProjectSitesApi.md#project_sites_get_all) | **GET** /projects/{projectId}/sites | 
 
 
@@ -65,8 +65,8 @@ nil (empty response body)
 
 
 
-# **project_sites_delete_area**
-> project_sites_delete_area(project_id, site_id)
+# **project_sites_delete_site**
+> project_sites_delete_site(project_id, site_id)
 
 
 
@@ -90,9 +90,9 @@ site_id = 'site_id_example' # String |
 
 
 begin
-  api_instance.project_sites_delete_area(project_id, site_id)
+  api_instance.project_sites_delete_site(project_id, site_id)
 rescue GlobalEventTechnologyApiClient::ApiError => e
-  puts "Exception when calling ProjectSitesApi->project_sites_delete_area: #{e}"
+  puts "Exception when calling ProjectSitesApi->project_sites_delete_site: #{e}"
 end
 ```
 

@@ -49,6 +49,7 @@ module GlobalEventTechnologyApiClient
     REDEEM_PRODUCT_VOUCHER = 'RedeemProductVoucher'.freeze
     TAG_RESTORE_TO_NEW_TAG = 'TagRestoreToNewTag'.freeze
     REFERENCE_STOCK = 'ReferenceStock'.freeze
+    API_ORDER = 'ApiOrder'.freeze
 
     # Builds the enum from string
     # @param [String] The enum value in the form of the string

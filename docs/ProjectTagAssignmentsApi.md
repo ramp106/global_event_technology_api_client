@@ -31,7 +31,7 @@ project_id = 'project_id_example' # String |
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example', # String | 
-  barcode: 'barcode_example' # String | 
+  external_ticket_id: 'external_ticket_id_example' # String | 
 }
 
 begin
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
  **project_id** | **String**|  | 
  **limit** | **Integer**|  | [optional] 
  **_next** | **String**|  | [optional] 
- **barcode** | **String**|  | [optional] 
+ **external_ticket_id** | **String**|  | [optional] 
 
 ### Return type
 

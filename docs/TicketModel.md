@@ -11,5 +11,6 @@ Name | Type | Description | Notes
 **update_date** | **DateTime** |  | 
 **real_credits** | **String** |  | 
 **gift_credits** | **String** |  | 
+**details** | **String** |  | [optional] 
 
 

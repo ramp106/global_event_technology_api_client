@@ -84,8 +84,8 @@ module GlobalEventTechnologyApiClient
     # @param site_id 
     # @param [Hash] opts the optional parameters
     # @return [nil]
-    def project_sites_delete_area(project_id, site_id, opts = {})
-      project_sites_delete_area_with_http_info(project_id, site_id, opts)
+    def project_sites_delete_site(project_id, site_id, opts = {})
+      project_sites_delete_site_with_http_info(project_id, site_id, opts)
       nil
     end
 
@@ -93,17 +93,17 @@ module GlobalEventTechnologyApiClient
     # @param site_id 
     # @param [Hash] opts the optional parameters
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def project_sites_delete_area_with_http_info(project_id, site_id, opts = {})
+    def project_sites_delete_site_with_http_info(project_id, site_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: ProjectSitesApi.project_sites_delete_area ...'
+        @api_client.config.logger.debug 'Calling API: ProjectSitesApi.project_sites_delete_site ...'
       end
       # verify the required parameter 'project_id' is set
       if @api_client.config.client_side_validation && project_id.nil?
-        fail ArgumentError, "Missing the required parameter 'project_id' when calling ProjectSitesApi.project_sites_delete_area"
+        fail ArgumentError, "Missing the required parameter 'project_id' when calling ProjectSitesApi.project_sites_delete_site"
       end
       # verify the required parameter 'site_id' is set
       if @api_client.config.client_side_validation && site_id.nil?
-        fail ArgumentError, "Missing the required parameter 'site_id' when calling ProjectSitesApi.project_sites_delete_area"
+        fail ArgumentError, "Missing the required parameter 'site_id' when calling ProjectSitesApi.project_sites_delete_site"
       end
       # resource path
       local_var_path = '/projects/{projectId}/sites/{siteId}'.sub('{' + 'projectId' + '}', project_id.to_s).sub('{' + 'siteId' + '}', site_id.to_s)
@@ -131,7 +131,7 @@ module GlobalEventTechnologyApiClient
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: ProjectSitesApi#project_sites_delete_area\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: ProjectSitesApi#project_sites_delete_site\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

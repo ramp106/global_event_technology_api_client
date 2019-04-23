@@ -30,6 +30,8 @@ module GlobalEventTechnologyApiClient
 
     attr_accessor :gift_credits
 
+    attr_accessor :details
+
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
@@ -40,7 +42,8 @@ module GlobalEventTechnologyApiClient
         :'cancelled' => :'cancelled',
         :'update_date' => :'updateDate',
         :'real_credits' => :'realCredits',
-        :'gift_credits' => :'giftCredits'
+        :'gift_credits' => :'giftCredits',
+        :'details' => :'details'
       }
     end
 
@@ -54,7 +57,8 @@ module GlobalEventTechnologyApiClient
         :'cancelled' => :'BOOLEAN',
         :'update_date' => :'DateTime',
         :'real_credits' => :'String',
-        :'gift_credits' => :'String'
+        :'gift_credits' => :'String',
+        :'details' => :'String'
       }
     end
 
@@ -96,6 +100,10 @@ module GlobalEventTechnologyApiClient
 
       if attributes.has_key?(:'giftCredits')
         self.gift_credits = attributes[:'giftCredits']
+      end
+
+      if attributes.has_key?(:'details')
+        self.details = attributes[:'details']
       end
     end
 
@@ -149,7 +157,8 @@ module GlobalEventTechnologyApiClient
           cancelled == o.cancelled &&
           update_date == o.update_date &&
           real_credits == o.real_credits &&
-          gift_credits == o.gift_credits
+          gift_credits == o.gift_credits &&
+          details == o.details
     end
 
     # @see the `==` method
@@ -161,7 +170,7 @@ module GlobalEventTechnologyApiClient
     # Calculates hash code according to all attributes.
     # @return [Fixnum] Hash code
     def hash
-      [id, external_id, ticket_type_name, ticket_type_alias, cancelled, update_date, real_credits, gift_credits].hash
+      [id, external_id, ticket_type_name, ticket_type_alias, cancelled, update_date, real_credits, gift_credits, details].hash
     end
 
     # Builds the object from hash
