@@ -1,177 +1,12 @@
 # GlobalEventTechnologyApiClient::ProjectTagBlacklistsApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**project_tag_blacklists_create_or_update**](ProjectTagBlacklistsApi.md#project_tag_blacklists_create_or_update) | **PUT** /projects/{projectId}/tag-blacklists/{tagBlacklistId} | 
-[**project_tag_blacklists_delete_area**](ProjectTagBlacklistsApi.md#project_tag_blacklists_delete_area) | **DELETE** /projects/{projectId}/tag-blacklists/{tagBlacklistId} | 
-[**project_tag_blacklists_get**](ProjectTagBlacklistsApi.md#project_tag_blacklists_get) | **GET** /projects/{projectId}/tag-blacklists/{tagBlacklistId} | 
 [**project_tag_blacklists_get_all**](ProjectTagBlacklistsApi.md#project_tag_blacklists_get_all) | **GET** /projects/{projectId}/tag-blacklists | 
-
-
-# **project_tag_blacklists_create_or_update**
-> project_tag_blacklists_create_or_update(project_id, tag_blacklist_id, args)
-
-
-
-### Example
-```ruby
-# load the gem
-require 'global_event_technology_api_client'
-# setup authorization
-GlobalEventTechnologyApiClient.configure do |config|
-  # Configure API key authorization: apikey
-  config.api_key['x-api-key'] = 'YOUR API KEY'
-  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
-  #config.api_key_prefix['x-api-key'] = 'Bearer'
-end
-
-api_instance = GlobalEventTechnologyApiClient::ProjectTagBlacklistsApi.new
-
-project_id = 'project_id_example' # String | 
-
-tag_blacklist_id = 'tag_blacklist_id_example' # String | 
-
-args = GlobalEventTechnologyApiClient::ExternalTagBlacklistModel.new # ExternalTagBlacklistModel | 
-
-
-begin
-  api_instance.project_tag_blacklists_create_or_update(project_id, tag_blacklist_id, args)
-rescue GlobalEventTechnologyApiClient::ApiError => e
-  puts "Exception when calling ProjectTagBlacklistsApi->project_tag_blacklists_create_or_update: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **project_id** | **String**|  | 
- **tag_blacklist_id** | **String**|  | 
- **args** | [**ExternalTagBlacklistModel**](ExternalTagBlacklistModel.md)|  | 
-
-### Return type
-
-nil (empty response body)
-
-### Authorization
-
-[apikey](../README.md#apikey)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-
-
-# **project_tag_blacklists_delete_area**
-> project_tag_blacklists_delete_area(project_id, tag_blacklist_id)
-
-
-
-### Example
-```ruby
-# load the gem
-require 'global_event_technology_api_client'
-# setup authorization
-GlobalEventTechnologyApiClient.configure do |config|
-  # Configure API key authorization: apikey
-  config.api_key['x-api-key'] = 'YOUR API KEY'
-  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
-  #config.api_key_prefix['x-api-key'] = 'Bearer'
-end
-
-api_instance = GlobalEventTechnologyApiClient::ProjectTagBlacklistsApi.new
-
-project_id = 'project_id_example' # String | 
-
-tag_blacklist_id = 'tag_blacklist_id_example' # String | 
-
-
-begin
-  api_instance.project_tag_blacklists_delete_area(project_id, tag_blacklist_id)
-rescue GlobalEventTechnologyApiClient::ApiError => e
-  puts "Exception when calling ProjectTagBlacklistsApi->project_tag_blacklists_delete_area: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **project_id** | **String**|  | 
- **tag_blacklist_id** | **String**|  | 
-
-### Return type
-
-nil (empty response body)
-
-### Authorization
-
-[apikey](../README.md#apikey)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-
-
-# **project_tag_blacklists_get**
-> ArrayResultOfSiteModel project_tag_blacklists_get(project_id, tag_blacklist_id)
-
-
-
-### Example
-```ruby
-# load the gem
-require 'global_event_technology_api_client'
-# setup authorization
-GlobalEventTechnologyApiClient.configure do |config|
-  # Configure API key authorization: apikey
-  config.api_key['x-api-key'] = 'YOUR API KEY'
-  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
-  #config.api_key_prefix['x-api-key'] = 'Bearer'
-end
-
-api_instance = GlobalEventTechnologyApiClient::ProjectTagBlacklistsApi.new
-
-project_id = 'project_id_example' # String | 
-
-tag_blacklist_id = 'tag_blacklist_id_example' # String | 
-
-
-begin
-  result = api_instance.project_tag_blacklists_get(project_id, tag_blacklist_id)
-  p result
-rescue GlobalEventTechnologyApiClient::ApiError => e
-  puts "Exception when calling ProjectTagBlacklistsApi->project_tag_blacklists_get: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **project_id** | **String**|  | 
- **tag_blacklist_id** | **String**|  | 
-
-### Return type
-
-[**ArrayResultOfSiteModel**](ArrayResultOfSiteModel.md)
-
-### Authorization
-
-[apikey](../README.md#apikey)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+[**project_tag_blacklists_get_status**](ProjectTagBlacklistsApi.md#project_tag_blacklists_get_status) | **GET** /projects/{projectId}/tag-blacklists/{tagNr}/{tagSessionCounter} | 
+[**project_tag_blacklists_update_black_list_for_tag**](ProjectTagBlacklistsApi.md#project_tag_blacklists_update_black_list_for_tag) | **PUT** /projects/{projectId}/tag-blacklists/{tagNr}/{tagSessionCounter} | 
 
 # **project_tag_blacklists_get_all**
 > ArrayResultOfTagBlacklistModel project_tag_blacklists_get_all(project_id, opts)
@@ -191,9 +26,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTagBlacklistsApi.new
-
 project_id = 'project_id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example' # String | 
@@ -225,8 +58,117 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
+
+
+
+# **project_tag_blacklists_get_status**
+> ArrayResultOfSiteModel project_tag_blacklists_get_status(project_id, tag_nr, tag_session_counter)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'global_event_technology_api_client'
+# setup authorization
+GlobalEventTechnologyApiClient.configure do |config|
+  # Configure API key authorization: apikey
+  config.api_key['x-api-key'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['x-api-key'] = 'Bearer'
+end
+
+api_instance = GlobalEventTechnologyApiClient::ProjectTagBlacklistsApi.new
+project_id = 'project_id_example' # String | 
+tag_nr = 'tag_nr_example' # String | 
+tag_session_counter = 56 # Integer | 
+
+
+begin
+  result = api_instance.project_tag_blacklists_get_status(project_id, tag_nr, tag_session_counter)
+  p result
+rescue GlobalEventTechnologyApiClient::ApiError => e
+  puts "Exception when calling ProjectTagBlacklistsApi->project_tag_blacklists_get_status: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **project_id** | **String**|  | 
+ **tag_nr** | **String**|  | 
+ **tag_session_counter** | **Integer**|  | 
+
+### Return type
+
+[**ArrayResultOfSiteModel**](ArrayResultOfSiteModel.md)
+
+### Authorization
+
+[apikey](../README.md#apikey)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **project_tag_blacklists_update_black_list_for_tag**
+> project_tag_blacklists_update_black_list_for_tag(bodyproject_idtag_nrtag_session_counter)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'global_event_technology_api_client'
+# setup authorization
+GlobalEventTechnologyApiClient.configure do |config|
+  # Configure API key authorization: apikey
+  config.api_key['x-api-key'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['x-api-key'] = 'Bearer'
+end
+
+api_instance = GlobalEventTechnologyApiClient::ProjectTagBlacklistsApi.new
+body = GlobalEventTechnologyApiClient::ExternalTagBlacklistModel.new # ExternalTagBlacklistModel | 
+project_id = 'project_id_example' # String | 
+tag_nr = 'tag_nr_example' # String | 
+tag_session_counter = 56 # Integer | 
+
+
+begin
+  api_instance.project_tag_blacklists_update_black_list_for_tag(bodyproject_idtag_nrtag_session_counter)
+rescue GlobalEventTechnologyApiClient::ApiError => e
+  puts "Exception when calling ProjectTagBlacklistsApi->project_tag_blacklists_update_black_list_for_tag: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**ExternalTagBlacklistModel**](ExternalTagBlacklistModel.md)|  | 
+ **project_id** | **String**|  | 
+ **tag_nr** | **String**|  | 
+ **tag_session_counter** | **Integer**|  | 
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+[apikey](../README.md#apikey)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: Not defined
 
 
 

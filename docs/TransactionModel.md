@@ -22,5 +22,10 @@ Name | Type | Description | Notes
 **receipt_nr** | **String** |  | [optional] 
 **invoice_pdf_url** | **String** |  | [optional] 
 **type** | [**TransactionTypeEnumModel**](TransactionTypeEnumModel.md) |  | 
-
+**access_checks** | [**Array&lt;AccessCheckModel&gt;**](AccessCheckModel.md) |  | [optional] 
+**accreditations** | [**Array&lt;AccreditationModel&gt;**](AccreditationModel.md) |  | [optional] 
+**ticket_validations** | [**Array&lt;TransactionTicketValidationModel&gt;**](TransactionTicketValidationModel.md) |  | [optional] 
+**finances** | [**Array&lt;FinanceModel&gt;**](FinanceModel.md) |  | [optional] 
+**payment** | [**PaymentModel**](PaymentModel.md) |  | [optional] 
+**unit_name** | **String** |  | [optional] 
 

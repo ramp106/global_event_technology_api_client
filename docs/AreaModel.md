@@ -11,4 +11,3 @@ Name | Type | Description | Notes
 **access_query** | **String** |  | [optional] 
 **update_date** | **DateTime** |  | 
 
-

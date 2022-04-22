@@ -4,11 +4,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **create_date** | **DateTime** |  | 
-**tag_nr** | **String** |  | [optional] 
-**tag_session_counter** | **Integer** |  | 
 **unit_id** | **String** |  | 
 **reason** | **String** |  | [optional] 
-**block_on_site** | **BOOLEAN** |  | 
-**block_online** | **BOOLEAN** |  | 
-
+**block_on_site** | **BOOLEAN** |  | [optional] 
+**block_online** | **BOOLEAN** |  | [optional] 
+**note** | **String** |  | [optional] 
 

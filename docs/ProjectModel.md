@@ -10,4 +10,3 @@ Name | Type | Description | Notes
 **currency_symbol** | **String** |  | [optional] 
 **credits_symbol** | **String** |  | [optional] 
 
-

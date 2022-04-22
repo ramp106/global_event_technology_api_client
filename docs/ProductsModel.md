@@ -7,13 +7,10 @@ Name | Type | Description | Notes
 **project_id** | **String** |  | 
 **update_date** | **DateTime** |  | 
 **name** | **String** |  | [optional] 
-**product_list_id** | **String** |  | [optional] 
-**price_in_credits** | **String** |  | [optional] 
-**enable_field_query** | **BOOLEAN** |  | 
-**field_query** | **String** |  | [optional] 
 **color** | **String** |  | [optional] 
 **ean** | **String** |  | [optional] 
-**accounting_category_id** | **String** |  | [optional] 
-**tax_rate_id** | **String** |  | [optional] 
-
+**type** | [**ProductTypeEnum**](ProductTypeEnum.md) |  | 
+**external_id** | **String** |  | [optional] 
+**product_list_id** | **String** |  | [optional] 
+**variants** | [**Array&lt;ProductVariantModel&gt;**](ProductVariantModel.md) |  | [optional] 
 

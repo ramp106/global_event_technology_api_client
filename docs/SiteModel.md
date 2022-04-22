@@ -11,4 +11,3 @@ Name | Type | Description | Notes
 **check_in_area_id** | **String** |  | [optional] 
 **check_out_area_id** | **String** |  | [optional] 
 
-

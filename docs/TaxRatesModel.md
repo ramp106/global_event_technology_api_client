@@ -8,4 +8,3 @@ Name | Type | Description | Notes
 **rate** | **String** |  | 
 **update_date** | **DateTime** |  | 
 
-

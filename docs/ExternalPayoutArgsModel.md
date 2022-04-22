@@ -31,4 +31,3 @@ Name | Type | Description | Notes
 **address_state_province_county** | **String** |  | [optional] 
 **address_country_iso** | **String** |  | [optional] 
 
-

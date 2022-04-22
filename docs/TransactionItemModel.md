@@ -12,6 +12,4 @@ Name | Type | Description | Notes
 **tax_rate_name** | **String** |  | [optional] 
 **type** | [**TransactionItemTypeEnumModel**](TransactionItemTypeEnumModel.md) |  | 
 **count** | **Float** |  | 
-**area_id** | **String** |  | [optional] 
-
 

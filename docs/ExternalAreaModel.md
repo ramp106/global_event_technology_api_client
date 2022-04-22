@@ -8,4 +8,3 @@ Name | Type | Description | Notes
 **access_query** | **String** |  | [optional] 
 **unit_id** | **String** |  | 
 
-

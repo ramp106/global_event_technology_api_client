@@ -11,4 +11,3 @@ Name | Type | Description | Notes
 **update_date** | **DateTime** |  | 
 **external_ticket_id** | **String** |  | [optional] 
 
-

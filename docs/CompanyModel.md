@@ -9,4 +9,3 @@ Name | Type | Description | Notes
 **postcode** | **String** |  | [optional] 
 **country** | **String** |  | [optional] 
 
-

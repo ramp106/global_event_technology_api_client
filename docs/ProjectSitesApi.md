@@ -1,6 +1,6 @@
 # GlobalEventTechnologyApiClient::ProjectSitesApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,9 +8,8 @@ Method | HTTP request | Description
 [**project_sites_delete_site**](ProjectSitesApi.md#project_sites_delete_site) | **DELETE** /projects/{projectId}/sites/{siteId} | 
 [**project_sites_get_all**](ProjectSitesApi.md#project_sites_get_all) | **GET** /projects/{projectId}/sites | 
 
-
 # **project_sites_create_or_update**
-> project_sites_create_or_update(project_id, site_id, args)
+> project_sites_create_or_update(bodyproject_idsite_id)
 
 
 
@@ -27,16 +26,13 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectSitesApi.new
-
+body = GlobalEventTechnologyApiClient::ExternalSiteModel.new # ExternalSiteModel | 
 project_id = 'project_id_example' # String | 
-
 site_id = 'site_id_example' # String | 
-
-args = GlobalEventTechnologyApiClient::ExternalSiteModel.new # ExternalSiteModel | 
 
 
 begin
-  api_instance.project_sites_create_or_update(project_id, site_id, args)
+  api_instance.project_sites_create_or_update(bodyproject_idsite_id)
 rescue GlobalEventTechnologyApiClient::ApiError => e
   puts "Exception when calling ProjectSitesApi->project_sites_create_or_update: #{e}"
 end
@@ -46,9 +42,9 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **body** | [**ExternalSiteModel**](ExternalSiteModel.md)|  | 
  **project_id** | **String**|  | 
  **site_id** | **String**|  | 
- **args** | [**ExternalSiteModel**](ExternalSiteModel.md)|  | 
 
 ### Return type
 
@@ -61,7 +57,7 @@ nil (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 
 
@@ -83,9 +79,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectSitesApi.new
-
 project_id = 'project_id_example' # String | 
-
 site_id = 'site_id_example' # String | 
 
 
@@ -113,8 +107,8 @@ nil (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
 
 
 
@@ -136,9 +130,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectSitesApi.new
-
 project_id = 'project_id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example' # String | 
@@ -170,7 +162,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
