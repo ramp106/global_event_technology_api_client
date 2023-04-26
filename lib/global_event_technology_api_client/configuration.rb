@@ -197,7 +197,7 @@ module GlobalEventTechnologyApiClient
             type: 'api_key',
             in: 'header',
             key: 'Authorization',
-            value: api_key_with_prefix('x-api-key')
+            value: api_key_with_prefix('Authorization')
           },
       }
     end
