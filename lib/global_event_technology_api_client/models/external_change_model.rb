@@ -20,6 +20,8 @@ module GlobalEventTechnologyApiClient
     attr_accessor :reference
 
     attr_accessor :items
+    
+    attr_accessor :site_id
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
@@ -27,7 +29,8 @@ module GlobalEventTechnologyApiClient
         :'reference_date' => :'referenceDate',
         :'tag_session' => :'tagSession',
         :'reference' => :'reference',
-        :'items' => :'items'
+        :'items' => :'items',
+        :'site_id' => :'siteId'
       }
     end
 
@@ -37,7 +40,8 @@ module GlobalEventTechnologyApiClient
         :'reference_date' => :'Object',
         :'tag_session' => :'Object',
         :'reference' => :'Object',
-        :'items' => :'Object'
+        :'items' => :'Object',
+        :'siteId' => :'Object'
       }
     end
 
@@ -73,6 +77,10 @@ module GlobalEventTechnologyApiClient
       if attributes.key?(:'reference')
         self.reference = attributes[:'reference']
       end
+      
+      if attributes.key?(:'site_id')
+        self.reference = attributes[:'site_id']
+      end
 
       if attributes.key?(:'items')
         if (value = attributes[:'items']).is_a?(Array)
@@ -107,7 +115,8 @@ module GlobalEventTechnologyApiClient
           reference_date == o.reference_date &&
           tag_session == o.tag_session &&
           reference == o.reference &&
-          items == o.items
+          items == o.items &&
+          site_id == o.site_id
     end
 
     # @see the `==` method
