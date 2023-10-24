@@ -3,6 +3,7 @@
 # Dependencies: swagger-codegen
 # Install with `brew install swagger-codegen`
 
+rm -rf docs lib spec
 swagger-codegen generate \
   -i https://api.get.systems/spec/projects/swaggerv2.json \
   -l ruby \
