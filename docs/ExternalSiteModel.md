@@ -27,4 +27,6 @@ Name | Type | Description | Notes
 **self_service_cashless_payment_type_id** | **String** |  | [optional] 
 **payment_type_ids** | **Array&lt;String&gt;** |  | [optional] 
 **chip_ids** | **Array&lt;String&gt;** |  | [optional] 
+**tip_config_id** | **String** |  | [optional] 
+**enable_master_barcodes** | **BOOLEAN** |  | [optional] 
 

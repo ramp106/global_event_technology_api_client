@@ -15,8 +15,6 @@ Name | Type | Description | Notes
 **iban** | **String** |  | [optional] 
 **bic** | **String** |  | [optional] 
 **transfer_text** | **String** |  | [optional] 
-**donate_credits** | **String** |  | [optional] 
-**donate_all** | **BOOLEAN** |  | 
 **country_iso** | **String** |  | [optional] 
 **bank_account_number** | **String** |  | [optional] 
 **bank_number** | **String** |  | [optional] 

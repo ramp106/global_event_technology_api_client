@@ -12,14 +12,12 @@ Name | Type | Description | Notes
 **cost_center_name** | **String** |  | [optional] 
 **site_id** | **String** |  | [optional] 
 **site_name** | **String** |  | [optional] 
-**worker_external_id** | **String** |  | [optional] 
-**worker_tag_nr** | **String** |  | [optional] 
-**worker_session_counter** | **Integer** |  | 
-**worker_display_name** | **String** |  | [optional] 
-**operator_external_id** | **String** |  | [optional] 
-**operator_tag_nr** | **String** |  | [optional] 
-**operator_session_counter** | **Integer** |  | 
-**operator_display_name** | **String** |  | [optional] 
+**worker_tag_session** | **String** |  | [optional] 
+**worker_given_name** | **String** |  | [optional] 
+**worker_family_name** | **String** |  | [optional] 
+**operator_tag_session** | **String** |  | [optional] 
+**operator_given_name** | **String** |  | [optional] 
+**operator_family_name** | **String** |  | [optional] 
 **rating** | **Integer** |  | 
 **note** | **String** |  | [optional] 
 
