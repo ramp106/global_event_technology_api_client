@@ -11,11 +11,12 @@ Name | Type | Description | Notes
 **real_credits_gross** | **String** |  | 
 **gift_credits_gross** | **String** |  | 
 **items** | [**Array&lt;TransactionItemModel&gt;**](TransactionItemModel.md) |  | [optional] 
+**operator** | [**TransactionOperatorModel**](TransactionOperatorModel.md) |  | [optional] 
 **status** | [**TransactionStatusEnumModel**](TransactionStatusEnumModel.md) |  | 
 **update_date** | **DateTime** |  | 
 **tag_nr** | **String** |  | [optional] 
 **session_counter** | **Integer** |  | [optional] 
-**company** | [**CompanyModel**](CompanyModel.md) |  | [optional] 
+**company** | [**TransactionCompanyModel**](TransactionCompanyModel.md) |  | [optional] 
 **transaction_date** | **DateTime** |  | [optional] 
 **server_receive_date** | **DateTime** |  | 
 **invoice_url** | **String** |  | [optional] 

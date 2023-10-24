@@ -6,10 +6,9 @@ Name | Type | Description | Notes
 **id** | **String** |  | 
 **update_date** | **DateTime** |  | 
 **unit_id** | **String** |  | 
-**worker_tag_nr** | **String** |  | [optional] 
-**worker_session_counter** | **Integer** |  | 
-**worker_external_id** | **String** |  | [optional] 
-**display_name** | **String** |  | [optional] 
+**worker_tag_session** | **String** |  | [optional] 
+**worker_given_name** | **String** |  | [optional] 
+**worker_family_name** | **String** |  | [optional] 
 **begin_stamp_id** | **String** |  | [optional] 
 **begin_date** | **DateTime** |  | [optional] 
 **begin_cost_center_id** | **String** |  | [optional] 

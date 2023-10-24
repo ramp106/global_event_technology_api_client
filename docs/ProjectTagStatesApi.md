@@ -20,9 +20,9 @@ require 'global_event_technology_api_client'
 # setup authorization
 GlobalEventTechnologyApiClient.configure do |config|
   # Configure API key authorization: apikey
-  config.api_key['x-api-key'] = 'YOUR API KEY'
+  config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
-  #config.api_key_prefix['x-api-key'] = 'Bearer'
+  #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTagStatesApi.new
@@ -70,9 +70,9 @@ require 'global_event_technology_api_client'
 # setup authorization
 GlobalEventTechnologyApiClient.configure do |config|
   # Configure API key authorization: apikey
-  config.api_key['x-api-key'] = 'YOUR API KEY'
+  config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
-  #config.api_key_prefix['x-api-key'] = 'Bearer'
+  #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTagStatesApi.new
@@ -122,9 +122,9 @@ require 'global_event_technology_api_client'
 # setup authorization
 GlobalEventTechnologyApiClient.configure do |config|
   # Configure API key authorization: apikey
-  config.api_key['x-api-key'] = 'YOUR API KEY'
+  config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
-  #config.api_key_prefix['x-api-key'] = 'Bearer'
+  #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTagStatesApi.new

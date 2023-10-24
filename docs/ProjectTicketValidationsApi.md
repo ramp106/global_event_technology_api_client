@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**project_ticket_validations_get_by_ticket_id**](ProjectTicketValidationsApi.md#project_ticket_validations_get_by_ticket_id) | **GET** /projects/{projectId}/ticket-validations/byTicketId/{ticketId} | 
 
 # **project_ticket_validations_get_all**
-> ArrayResultOfTicketModel project_ticket_validations_get_all(project_id, opts)
+> ArrayResultOfTicketValidationModel project_ticket_validations_get_all(project_id, opts)
 
 
 
@@ -20,9 +20,9 @@ require 'global_event_technology_api_client'
 # setup authorization
 GlobalEventTechnologyApiClient.configure do |config|
   # Configure API key authorization: apikey
-  config.api_key['x-api-key'] = 'YOUR API KEY'
+  config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
-  #config.api_key_prefix['x-api-key'] = 'Bearer'
+  #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTicketValidationsApi.new
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ArrayResultOfTicketModel**](ArrayResultOfTicketModel.md)
+[**ArrayResultOfTicketValidationModel**](ArrayResultOfTicketValidationModel.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 
 # **project_ticket_validations_get_by_barcode**
-> ArrayResultOfTicketModel project_ticket_validations_get_by_barcode(project_id, barcode, opts)
+> ArrayResultOfTicketValidationModel project_ticket_validations_get_by_barcode(project_id, barcode, opts)
 
 
 
@@ -75,9 +75,9 @@ require 'global_event_technology_api_client'
 # setup authorization
 GlobalEventTechnologyApiClient.configure do |config|
   # Configure API key authorization: apikey
-  config.api_key['x-api-key'] = 'YOUR API KEY'
+  config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
-  #config.api_key_prefix['x-api-key'] = 'Bearer'
+  #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTicketValidationsApi.new
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ArrayResultOfTicketModel**](ArrayResultOfTicketModel.md)
+[**ArrayResultOfTicketValidationModel**](ArrayResultOfTicketValidationModel.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 
 
 # **project_ticket_validations_get_by_ticket_id**
-> ArrayResultOfTicketModel project_ticket_validations_get_by_ticket_id(project_id, ticket_id, opts)
+> ArrayResultOfTicketValidationModel project_ticket_validations_get_by_ticket_id(project_id, ticket_id, opts)
 
 
 
@@ -132,9 +132,9 @@ require 'global_event_technology_api_client'
 # setup authorization
 GlobalEventTechnologyApiClient.configure do |config|
   # Configure API key authorization: apikey
-  config.api_key['x-api-key'] = 'YOUR API KEY'
+  config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
-  #config.api_key_prefix['x-api-key'] = 'Bearer'
+  #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTicketValidationsApi.new
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ArrayResultOfTicketModel**](ArrayResultOfTicketModel.md)
+[**ArrayResultOfTicketValidationModel**](ArrayResultOfTicketValidationModel.md)
 
 ### Authorization
 
