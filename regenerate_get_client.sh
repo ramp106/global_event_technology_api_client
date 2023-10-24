@@ -26,3 +26,7 @@ FILE=lib/global_event_technology_api_client/models/work_time_stamp_type_enum_mod
 sed -i '' 's/INFO/_INFO/g' $FILE
 sed -i '' 's/BEGIN/_BEGIN/g' $FILE
 sed -i '' 's/END/_END/g' $FILE
+
+# Fix faulty scheme
+# NOTE: Can this be set via swagger-codegen? In config.json or as a cli parameter?
+sed -i '' "s/@scheme = 'http'/@scheme = 'https'/g" lib/global_event_technology_api_client/configuration.rb

@@ -125,7 +125,7 @@ module GlobalEventTechnologyApiClient
     attr_accessor :force_ending_format
 
     def initialize
-      @scheme = 'http'
+      @scheme = 'https'
       @host = 'api.get.systems'
       @base_path = '/'
       @api_key = {}
