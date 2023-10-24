@@ -28,5 +28,7 @@ sed -i '' 's/BEGIN/_BEGIN/g' $FILE
 sed -i '' 's/END/_END/g' $FILE
 
 # Fix faulty scheme
-# NOTE: Can this be set via swagger-codegen? In config.json or as a cli parameter?
+# NOTE:
+# This should be set by GET in their API definition. Maybe we can ask them to do so?
+# Or can this be set via swagger-codegen? In config.json or as a cli parameter?
 sed -i '' "s/@scheme = 'http'/@scheme = 'https'/g" lib/global_event_technology_api_client/configuration.rb
