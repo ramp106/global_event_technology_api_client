@@ -13,9 +13,9 @@ require 'date'
 
 module GlobalEventTechnologyApiClient
   class WorkTimeStampTypeEnumModel
-    INFO = 'Info'.freeze
-    BEGIN = 'Begin'.freeze
-    END = 'End'.freeze
+    _INFO = 'Info'.freeze
+    _BEGIN = 'Begin'.freeze
+    _END = 'End'.freeze
 
     # Builds the enum from string
     # @param [String] The enum value in the form of the string
