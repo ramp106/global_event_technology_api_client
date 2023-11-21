@@ -24,4 +24,5 @@ Name | Type | Description | Notes
 **zip_code** | **String** |  | [optional] 
 **city** | **String** |  | [optional] 
 **country** | **String** |  | [optional] 
+**source_name** | **String** |  | [optional] 
 
