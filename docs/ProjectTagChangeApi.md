@@ -114,7 +114,7 @@ nil (empty response body)
 
 
 # **project_tag_change_get**
-> project_tag_change_get(project_id, external_reference)
+> ExternalApiChangeInfoModel project_tag_change_get(project_id, external_reference)
 
 
 
@@ -136,7 +136,8 @@ external_reference = 'external_reference_example' # String |
 
 
 begin
-  api_instance.project_tag_change_get(project_id, external_reference)
+  result = api_instance.project_tag_change_get(project_id, external_reference)
+  p result
 rescue GlobalEventTechnologyApiClient::ApiError => e
   puts "Exception when calling ProjectTagChangeApi->project_tag_change_get: #{e}"
 end
@@ -151,7 +152,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-nil (empty response body)
+[**ExternalApiChangeInfoModel**](ExternalApiChangeInfoModel.md)
 
 ### Authorization
 
@@ -160,12 +161,12 @@ nil (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 
 
 # **project_tag_change_get_all**
-> project_tag_change_get_all(project_id, external_reference, opts)
+> ArrayResultOfExternalApiChangeInfoModel project_tag_change_get_all(project_id, external_reference, opts)
 
 
 
@@ -190,7 +191,8 @@ opts = {
 }
 
 begin
-  api_instance.project_tag_change_get_all(project_id, external_reference, opts)
+  result = api_instance.project_tag_change_get_all(project_id, external_reference, opts)
+  p result
 rescue GlobalEventTechnologyApiClient::ApiError => e
   puts "Exception when calling ProjectTagChangeApi->project_tag_change_get_all: #{e}"
 end
@@ -207,7 +209,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-nil (empty response body)
+[**ArrayResultOfExternalApiChangeInfoModel**](ArrayResultOfExternalApiChangeInfoModel.md)
 
 ### Authorization
 
@@ -216,7 +218,7 @@ nil (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 
 

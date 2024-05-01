@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**project_tag_server_states_update_server_state**](ProjectTagServerStatesApi.md#project_tag_server_states_update_server_state) | **PUT** /projects/{projectId}/server-states/{tagSession} | 
 
 # **project_tag_server_states_get**
-> ArrayResultOfTagServerStateModel project_tag_server_states_get(project_id, tag_session)
+> ArrayResultOfTagServerStateModel project_tag_server_states_get(project_id, tag_session, opts)
 
 
 
@@ -28,10 +28,13 @@ end
 api_instance = GlobalEventTechnologyApiClient::ProjectTagServerStatesApi.new
 project_id = 'project_id_example' # String | 
 tag_session = 'tag_session_example' # String | 
-
+opts = { 
+  limit: 56, # Integer | 
+  _next: '_next_example' # String | 
+}
 
 begin
-  result = api_instance.project_tag_server_states_get(project_id, tag_session)
+  result = api_instance.project_tag_server_states_get(project_id, tag_session, opts)
   p result
 rescue GlobalEventTechnologyApiClient::ApiError => e
   puts "Exception when calling ProjectTagServerStatesApi->project_tag_server_states_get: #{e}"
@@ -44,6 +47,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **project_id** | **String**|  | 
  **tag_session** | **String**|  | 
+ **limit** | **Integer**|  | [optional] 
+ **_next** | **String**|  | [optional] 
 
 ### Return type
 

@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 
 # **project_units_get_by_id**
-> ArrayResultOfSiteModel project_units_get_by_id(project_id, unit_id, opts)
+> UnitModel project_units_get_by_id(project_id, unit_id)
 
 
 
@@ -82,13 +82,10 @@ end
 api_instance = GlobalEventTechnologyApiClient::ProjectUnitsApi.new
 project_id = 'project_id_example' # String | 
 unit_id = 'unit_id_example' # String | 
-opts = { 
-  limit: 56, # Integer | 
-  _next: '_next_example' # String | 
-}
+
 
 begin
-  result = api_instance.project_units_get_by_id(project_id, unit_id, opts)
+  result = api_instance.project_units_get_by_id(project_id, unit_id)
   p result
 rescue GlobalEventTechnologyApiClient::ApiError => e
   puts "Exception when calling ProjectUnitsApi->project_units_get_by_id: #{e}"
@@ -101,12 +98,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **project_id** | **String**|  | 
  **unit_id** | **String**|  | 
- **limit** | **Integer**|  | [optional] 
- **_next** | **String**|  | [optional] 
 
 ### Return type
 
-[**ArrayResultOfSiteModel**](ArrayResultOfSiteModel.md)
+[**UnitModel**](UnitModel.md)
 
 ### Authorization
 

@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**project_tag_states_get_for_tag_and_session_counter**](ProjectTagStatesApi.md#project_tag_states_get_for_tag_and_session_counter) | **GET** /projects/{projectId}/tag-states/{tagNr}/{sessionCounter} | 
 
 # **project_tag_states_get_all**
-> ArrayResultOfCurrentTagStateModel project_tag_states_get_all(project_id)
+> ArrayResultOfCurrentTagStateModel project_tag_states_get_all(project_id, opts)
 
 
 
@@ -27,10 +27,13 @@ end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTagStatesApi.new
 project_id = 'project_id_example' # String | 
-
+opts = { 
+  limit: 56, # Integer | 
+  _next: '_next_example' # String | 
+}
 
 begin
-  result = api_instance.project_tag_states_get_all(project_id)
+  result = api_instance.project_tag_states_get_all(project_id, opts)
   p result
 rescue GlobalEventTechnologyApiClient::ApiError => e
   puts "Exception when calling ProjectTagStatesApi->project_tag_states_get_all: #{e}"
@@ -42,6 +45,8 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **project_id** | **String**|  | 
+ **limit** | **Integer**|  | [optional] 
+ **_next** | **String**|  | [optional] 
 
 ### Return type
 
@@ -59,7 +64,7 @@ Name | Type | Description  | Notes
 
 
 # **project_tag_states_get_all_for_tag**
-> ArrayResultOfCurrentTagStateModel project_tag_states_get_all_for_tag(project_id, tag_nr)
+> ArrayResultOfCurrentTagStateModel project_tag_states_get_all_for_tag(project_id, tag_nr, opts)
 
 
 
@@ -78,10 +83,13 @@ end
 api_instance = GlobalEventTechnologyApiClient::ProjectTagStatesApi.new
 project_id = 'project_id_example' # String | 
 tag_nr = 'tag_nr_example' # String | 
-
+opts = { 
+  limit: 56, # Integer | 
+  _next: '_next_example' # String | 
+}
 
 begin
-  result = api_instance.project_tag_states_get_all_for_tag(project_id, tag_nr)
+  result = api_instance.project_tag_states_get_all_for_tag(project_id, tag_nr, opts)
   p result
 rescue GlobalEventTechnologyApiClient::ApiError => e
   puts "Exception when calling ProjectTagStatesApi->project_tag_states_get_all_for_tag: #{e}"
@@ -94,6 +102,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **project_id** | **String**|  | 
  **tag_nr** | **String**|  | 
+ **limit** | **Integer**|  | [optional] 
+ **_next** | **String**|  | [optional] 
 
 ### Return type
 

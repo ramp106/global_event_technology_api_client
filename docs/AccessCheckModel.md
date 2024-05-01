@@ -4,8 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** |  | 
-**area_id** | **String** |  | 
-**pax_change** | **Integer** |  | 
 **check_valid** | **BOOLEAN** |  | 
+**area_id** | **String** |  | [optional] 
+**pax_change** | **Integer** |  | [optional] 
 **area_name** | **String** |  | [optional] 
 

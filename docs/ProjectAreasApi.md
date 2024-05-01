@@ -169,7 +169,7 @@ Name | Type | Description  | Notes
 
 
 # **project_areas_get_by_id**
-> AreaModel project_areas_get_by_id(project_id, area_id, opts)
+> AreaModel project_areas_get_by_id(project_id, area_id)
 
 
 
@@ -188,13 +188,10 @@ end
 api_instance = GlobalEventTechnologyApiClient::ProjectAreasApi.new
 project_id = 'project_id_example' # String | 
 area_id = 'area_id_example' # String | 
-opts = { 
-  limit: 56, # Integer | 
-  _next: '_next_example' # String | 
-}
+
 
 begin
-  result = api_instance.project_areas_get_by_id(project_id, area_id, opts)
+  result = api_instance.project_areas_get_by_id(project_id, area_id)
   p result
 rescue GlobalEventTechnologyApiClient::ApiError => e
   puts "Exception when calling ProjectAreasApi->project_areas_get_by_id: #{e}"
@@ -207,8 +204,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **project_id** | **String**|  | 
  **area_id** | **String**|  | 
- **limit** | **Integer**|  | [optional] 
- **_next** | **String**|  | [optional] 
 
 ### Return type
 

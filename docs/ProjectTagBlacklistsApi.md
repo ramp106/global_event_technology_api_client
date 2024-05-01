@@ -5,7 +5,7 @@ All URIs are relative to */*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**project_tag_blacklists_get_all**](ProjectTagBlacklistsApi.md#project_tag_blacklists_get_all) | **GET** /projects/{projectId}/tag-blacklists | 
-[**project_tag_blacklists_get_status**](ProjectTagBlacklistsApi.md#project_tag_blacklists_get_status) | **GET** /projects/{projectId}/tag-blacklists/{tagNr}/{tagSessionCounter} | 
+[**project_tag_blacklists_get_tag_session_entries**](ProjectTagBlacklistsApi.md#project_tag_blacklists_get_tag_session_entries) | **GET** /projects/{projectId}/tag-blacklists/{tagNr}/{tagSessionCounter} | 
 [**project_tag_blacklists_update_black_list_for_tag**](ProjectTagBlacklistsApi.md#project_tag_blacklists_update_black_list_for_tag) | **PUT** /projects/{projectId}/tag-blacklists/{tagNr}/{tagSessionCounter} | 
 
 # **project_tag_blacklists_get_all**
@@ -63,8 +63,8 @@ Name | Type | Description  | Notes
 
 
 
-# **project_tag_blacklists_get_status**
-> ArrayResultOfSiteModel project_tag_blacklists_get_status(project_id, tag_nr, tag_session_counter)
+# **project_tag_blacklists_get_tag_session_entries**
+> ArrayResultOfTagBlacklistModel project_tag_blacklists_get_tag_session_entries(project_id, tag_nr, tag_session_counter, opts)
 
 
 
@@ -84,13 +84,16 @@ api_instance = GlobalEventTechnologyApiClient::ProjectTagBlacklistsApi.new
 project_id = 'project_id_example' # String | 
 tag_nr = 'tag_nr_example' # String | 
 tag_session_counter = 56 # Integer | 
-
+opts = { 
+  limit: 56, # Integer | 
+  _next: '_next_example' # String | 
+}
 
 begin
-  result = api_instance.project_tag_blacklists_get_status(project_id, tag_nr, tag_session_counter)
+  result = api_instance.project_tag_blacklists_get_tag_session_entries(project_id, tag_nr, tag_session_counter, opts)
   p result
 rescue GlobalEventTechnologyApiClient::ApiError => e
-  puts "Exception when calling ProjectTagBlacklistsApi->project_tag_blacklists_get_status: #{e}"
+  puts "Exception when calling ProjectTagBlacklistsApi->project_tag_blacklists_get_tag_session_entries: #{e}"
 end
 ```
 
@@ -101,10 +104,12 @@ Name | Type | Description  | Notes
  **project_id** | **String**|  | 
  **tag_nr** | **String**|  | 
  **tag_session_counter** | **Integer**|  | 
+ **limit** | **Integer**|  | [optional] 
+ **_next** | **String**|  | [optional] 
 
 ### Return type
 
-[**ArrayResultOfSiteModel**](ArrayResultOfSiteModel.md)
+[**ArrayResultOfTagBlacklistModel**](ArrayResultOfTagBlacklistModel.md)
 
 ### Authorization
 

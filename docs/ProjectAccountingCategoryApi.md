@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**project_accounting_category_get_by_id**](ProjectAccountingCategoryApi.md#project_accounting_category_get_by_id) | **GET** /projects/{projectId}/accounting-categories/{accountingCategoryId} | 
 
 # **project_accounting_category_get_all**
-> ArrayResultOfAccountingCategoryModel project_accounting_category_get_all(project_id)
+> ArrayResultOfAccountingCategoryModel project_accounting_category_get_all(project_id, opts)
 
 
 
@@ -26,10 +26,13 @@ end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectAccountingCategoryApi.new
 project_id = 'project_id_example' # String | 
-
+opts = { 
+  limit: 56, # Integer | 
+  _next: '_next_example' # String | 
+}
 
 begin
-  result = api_instance.project_accounting_category_get_all(project_id)
+  result = api_instance.project_accounting_category_get_all(project_id, opts)
   p result
 rescue GlobalEventTechnologyApiClient::ApiError => e
   puts "Exception when calling ProjectAccountingCategoryApi->project_accounting_category_get_all: #{e}"
@@ -41,6 +44,8 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **project_id** | **String**|  | 
+ **limit** | **Integer**|  | [optional] 
+ **_next** | **String**|  | [optional] 
 
 ### Return type
 
