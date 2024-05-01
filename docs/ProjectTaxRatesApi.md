@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**project_tax_rates_get_all**](ProjectTaxRatesApi.md#project_tax_rates_get_all) | **GET** /projects/{projectId}/tax-rates | 
 
 # **project_tax_rates_get_all**
-> ArrayResultOfTaxRatesModel project_tax_rates_get_all(project_id)
+> ArrayResultOfTaxRatesModel project_tax_rates_get_all(project_id, opts)
 
 
 
@@ -25,10 +25,13 @@ end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTaxRatesApi.new
 project_id = 'project_id_example' # String | 
-
+opts = { 
+  limit: 56, # Integer | 
+  _next: '_next_example' # String | 
+}
 
 begin
-  result = api_instance.project_tax_rates_get_all(project_id)
+  result = api_instance.project_tax_rates_get_all(project_id, opts)
   p result
 rescue GlobalEventTechnologyApiClient::ApiError => e
   puts "Exception when calling ProjectTaxRatesApi->project_tax_rates_get_all: #{e}"
@@ -40,6 +43,8 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **project_id** | **String**|  | 
+ **limit** | **Integer**|  | [optional] 
+ **_next** | **String**|  | [optional] 
 
 ### Return type
 

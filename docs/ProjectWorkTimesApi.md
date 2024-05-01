@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 
 # **project_work_times_get_by_id**
-> WorkTimeModel project_work_times_get_by_id(project_id, work_time_id, opts)
+> WorkTimeModel project_work_times_get_by_id(project_id, work_time_id)
 
 
 
@@ -82,13 +82,10 @@ end
 api_instance = GlobalEventTechnologyApiClient::ProjectWorkTimesApi.new
 project_id = 'project_id_example' # String | 
 work_time_id = 'work_time_id_example' # String | 
-opts = { 
-  limit: 56, # Integer | 
-  _next: '_next_example' # String | 
-}
+
 
 begin
-  result = api_instance.project_work_times_get_by_id(project_id, work_time_id, opts)
+  result = api_instance.project_work_times_get_by_id(project_id, work_time_id)
   p result
 rescue GlobalEventTechnologyApiClient::ApiError => e
   puts "Exception when calling ProjectWorkTimesApi->project_work_times_get_by_id: #{e}"
@@ -101,8 +98,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **project_id** | **String**|  | 
  **work_time_id** | **String**|  | 
- **limit** | **Integer**|  | [optional] 
- **_next** | **String**|  | [optional] 
 
 ### Return type
 
