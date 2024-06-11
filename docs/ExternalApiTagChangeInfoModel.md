@@ -1,4 +1,4 @@
-# GlobalEventTechnologyApiClient::ExternalApiChangeInfoModel
+# GlobalEventTechnologyApiClient::ExternalApiTagChangeInfoModel
 
 ## Properties
 Name | Type | Description | Notes

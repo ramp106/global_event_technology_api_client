@@ -622,7 +622,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTagChangeApi.new
-body = GlobalEventTechnologyApiClient::ExternalChangeModel.new # ExternalChangeModel | 
+body = GlobalEventTechnologyApiClient::ExternalTagChangeModel.new # ExternalTagChangeModel | 
 project_id = 'project_id_example' # String | 
 external_reference = 'external_reference_example' # String | 
 
@@ -681,58 +681,56 @@ GlobalEventTechnologyApiClient.configure do |config|
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = GlobalEventTechnologyApiClient::ProjectTagServerStatesApi.new
+api_instance = GlobalEventTechnologyApiClient::ProjectTagChangeViaTicketApi.new
+body = GlobalEventTechnologyApiClient::ExternalTicketChangeModel.new # ExternalTicketChangeModel | 
 project_id = 'project_id_example' # String | 
-tag_session = 'tag_session_example' # String | 
+external_reference = 'external_reference_example' # String | 
+
+
+begin
+  api_instance.project_tag_change_via_ticket_create(body, project_id, external_reference)
+rescue GlobalEventTechnologyApiClient::ApiError => e
+  puts "Exception when calling ProjectTagChangeViaTicketApi->project_tag_change_via_ticket_create: #{e}"
+end
+# Setup authorization
+GlobalEventTechnologyApiClient.configure do |config|
+  # Configure API key authorization: apikey
+  config.api_key['Authorization'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['Authorization'] = 'Bearer'
+end
+
+api_instance = GlobalEventTechnologyApiClient::ProjectTagChangeViaTicketApi.new
+project_id = 'project_id_example' # String | 
+external_reference = 'external_reference_example' # String | 
+
+
+begin
+  result = api_instance.project_tag_change_via_ticket_get(project_id, external_reference)
+  p result
+rescue GlobalEventTechnologyApiClient::ApiError => e
+  puts "Exception when calling ProjectTagChangeViaTicketApi->project_tag_change_via_ticket_get: #{e}"
+end
+# Setup authorization
+GlobalEventTechnologyApiClient.configure do |config|
+  # Configure API key authorization: apikey
+  config.api_key['Authorization'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['Authorization'] = 'Bearer'
+end
+
+api_instance = GlobalEventTechnologyApiClient::ProjectTagChangeViaTicketApi.new
+project_id = 'project_id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example' # String | 
 }
 
 begin
-  result = api_instance.project_tag_server_states_get(project_id, tag_session, opts)
+  result = api_instance.project_tag_change_via_ticket_get_all(project_id, opts)
   p result
 rescue GlobalEventTechnologyApiClient::ApiError => e
-  puts "Exception when calling ProjectTagServerStatesApi->project_tag_server_states_get: #{e}"
-end
-# Setup authorization
-GlobalEventTechnologyApiClient.configure do |config|
-  # Configure API key authorization: apikey
-  config.api_key['Authorization'] = 'YOUR API KEY'
-  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
-  #config.api_key_prefix['Authorization'] = 'Bearer'
-end
-
-api_instance = GlobalEventTechnologyApiClient::ProjectTagServerStatesApi.new
-body = GlobalEventTechnologyApiClient::ExternalUpdateTagServerStateModel.new # ExternalUpdateTagServerStateModel | 
-project_id = 'project_id_example' # String | 
-external_ticket_id = 'external_ticket_id_example' # String | 
-
-
-begin
-  result = api_instance.project_tag_server_states_push_by_tag_assignment(body, project_id, external_ticket_id)
-  p result
-rescue GlobalEventTechnologyApiClient::ApiError => e
-  puts "Exception when calling ProjectTagServerStatesApi->project_tag_server_states_push_by_tag_assignment: #{e}"
-end
-# Setup authorization
-GlobalEventTechnologyApiClient.configure do |config|
-  # Configure API key authorization: apikey
-  config.api_key['Authorization'] = 'YOUR API KEY'
-  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
-  #config.api_key_prefix['Authorization'] = 'Bearer'
-end
-
-api_instance = GlobalEventTechnologyApiClient::ProjectTagServerStatesApi.new
-body = GlobalEventTechnologyApiClient::ExternalUpdateTagServerStateModel.new # ExternalUpdateTagServerStateModel | 
-project_id = 'project_id_example' # String | 
-tag_session = 'tag_session_example' # String | 
-
-
-begin
-  api_instance.project_tag_server_states_update_server_state(body, project_id, tag_session)
-rescue GlobalEventTechnologyApiClient::ApiError => e
-  puts "Exception when calling ProjectTagServerStatesApi->project_tag_server_states_update_server_state: #{e}"
+  puts "Exception when calling ProjectTagChangeViaTicketApi->project_tag_change_via_ticket_get_all: #{e}"
 end
 # Setup authorization
 GlobalEventTechnologyApiClient.configure do |config|
@@ -1247,9 +1245,9 @@ Class | Method | HTTP request | Description
 *GlobalEventTechnologyApiClient::ProjectTagChangeApi* | [**project_tag_change_create**](docs/ProjectTagChangeApi.md#project_tag_change_create) | **POST** /projects/{projectId}/tag-changes/{externalReference} | 
 *GlobalEventTechnologyApiClient::ProjectTagChangeApi* | [**project_tag_change_get**](docs/ProjectTagChangeApi.md#project_tag_change_get) | **GET** /projects/{projectId}/tag-changes/{externalReference} | 
 *GlobalEventTechnologyApiClient::ProjectTagChangeApi* | [**project_tag_change_get_all**](docs/ProjectTagChangeApi.md#project_tag_change_get_all) | **GET** /projects/{projectId}/tag-changes | 
-*GlobalEventTechnologyApiClient::ProjectTagServerStatesApi* | [**project_tag_server_states_get**](docs/ProjectTagServerStatesApi.md#project_tag_server_states_get) | **GET** /projects/{projectId}/server-states | 
-*GlobalEventTechnologyApiClient::ProjectTagServerStatesApi* | [**project_tag_server_states_push_by_tag_assignment**](docs/ProjectTagServerStatesApi.md#project_tag_server_states_push_by_tag_assignment) | **PUT** /projects/{projectId}/server-states/push-by-tag-assignment/{externalTicketId} | 
-*GlobalEventTechnologyApiClient::ProjectTagServerStatesApi* | [**project_tag_server_states_update_server_state**](docs/ProjectTagServerStatesApi.md#project_tag_server_states_update_server_state) | **PUT** /projects/{projectId}/server-states/{tagSession} | 
+*GlobalEventTechnologyApiClient::ProjectTagChangeViaTicketApi* | [**project_tag_change_via_ticket_create**](docs/ProjectTagChangeViaTicketApi.md#project_tag_change_via_ticket_create) | **POST** /projects/{projectId}/tag-changes-via-ticket/{externalReference} | 
+*GlobalEventTechnologyApiClient::ProjectTagChangeViaTicketApi* | [**project_tag_change_via_ticket_get**](docs/ProjectTagChangeViaTicketApi.md#project_tag_change_via_ticket_get) | **GET** /projects/{projectId}/tag-changes-via-ticket/{externalReference} | 
+*GlobalEventTechnologyApiClient::ProjectTagChangeViaTicketApi* | [**project_tag_change_via_ticket_get_all**](docs/ProjectTagChangeViaTicketApi.md#project_tag_change_via_ticket_get_all) | **GET** /projects/{projectId}/tag-changes-via-ticket | 
 *GlobalEventTechnologyApiClient::ProjectTagStatesApi* | [**project_tag_states_get_all**](docs/ProjectTagStatesApi.md#project_tag_states_get_all) | **GET** /projects/{projectId}/tag-states | 
 *GlobalEventTechnologyApiClient::ProjectTagStatesApi* | [**project_tag_states_get_all_for_tag**](docs/ProjectTagStatesApi.md#project_tag_states_get_all_for_tag) | **GET** /projects/{projectId}/tag-states/{tagNr} | 
 *GlobalEventTechnologyApiClient::ProjectTagStatesApi* | [**project_tag_states_get_for_tag_and_session_counter**](docs/ProjectTagStatesApi.md#project_tag_states_get_for_tag_and_session_counter) | **GET** /projects/{projectId}/tag-states/{tagNr}/{sessionCounter} | 
@@ -1285,7 +1283,8 @@ Class | Method | HTTP request | Description
  - [GlobalEventTechnologyApiClient::ArrayResultOfAreaModel](docs/ArrayResultOfAreaModel.md)
  - [GlobalEventTechnologyApiClient::ArrayResultOfCompanyModel](docs/ArrayResultOfCompanyModel.md)
  - [GlobalEventTechnologyApiClient::ArrayResultOfCurrentTagStateModel](docs/ArrayResultOfCurrentTagStateModel.md)
- - [GlobalEventTechnologyApiClient::ArrayResultOfExternalApiChangeInfoModel](docs/ArrayResultOfExternalApiChangeInfoModel.md)
+ - [GlobalEventTechnologyApiClient::ArrayResultOfExternalApiTagChangeInfoModel](docs/ArrayResultOfExternalApiTagChangeInfoModel.md)
+ - [GlobalEventTechnologyApiClient::ArrayResultOfExternalApiTicketChangeInfoModel](docs/ArrayResultOfExternalApiTicketChangeInfoModel.md)
  - [GlobalEventTechnologyApiClient::ArrayResultOfFieldModel](docs/ArrayResultOfFieldModel.md)
  - [GlobalEventTechnologyApiClient::ArrayResultOfProductListModel](docs/ArrayResultOfProductListModel.md)
  - [GlobalEventTechnologyApiClient::ArrayResultOfProductsModel](docs/ArrayResultOfProductsModel.md)
@@ -1293,7 +1292,6 @@ Class | Method | HTTP request | Description
  - [GlobalEventTechnologyApiClient::ArrayResultOfSiteModel](docs/ArrayResultOfSiteModel.md)
  - [GlobalEventTechnologyApiClient::ArrayResultOfTagAssignmentModel](docs/ArrayResultOfTagAssignmentModel.md)
  - [GlobalEventTechnologyApiClient::ArrayResultOfTagBlacklistModel](docs/ArrayResultOfTagBlacklistModel.md)
- - [GlobalEventTechnologyApiClient::ArrayResultOfTagServerStateModel](docs/ArrayResultOfTagServerStateModel.md)
  - [GlobalEventTechnologyApiClient::ArrayResultOfTaxRatesModel](docs/ArrayResultOfTaxRatesModel.md)
  - [GlobalEventTechnologyApiClient::ArrayResultOfTicketModel](docs/ArrayResultOfTicketModel.md)
  - [GlobalEventTechnologyApiClient::ArrayResultOfTicketValidationModel](docs/ArrayResultOfTicketValidationModel.md)
@@ -1304,13 +1302,17 @@ Class | Method | HTTP request | Description
  - [GlobalEventTechnologyApiClient::CompanyModel](docs/CompanyModel.md)
  - [GlobalEventTechnologyApiClient::CounterValueField](docs/CounterValueField.md)
  - [GlobalEventTechnologyApiClient::CurrentTagStateModel](docs/CurrentTagStateModel.md)
- - [GlobalEventTechnologyApiClient::ExternalApiChangeInfoModel](docs/ExternalApiChangeInfoModel.md)
  - [GlobalEventTechnologyApiClient::ExternalApiChangeInfoStatusEnumModel](docs/ExternalApiChangeInfoStatusEnumModel.md)
  - [GlobalEventTechnologyApiClient::ExternalApiChangeItemChangeInfoModel](docs/ExternalApiChangeItemChangeInfoModel.md)
  - [GlobalEventTechnologyApiClient::ExternalApiChangeItemInfoModel](docs/ExternalApiChangeItemInfoModel.md)
+ - [GlobalEventTechnologyApiClient::ExternalApiTagChangeInfoModel](docs/ExternalApiTagChangeInfoModel.md)
+ - [GlobalEventTechnologyApiClient::ExternalApiTicketChangeInfoModel](docs/ExternalApiTicketChangeInfoModel.md)
+ - [GlobalEventTechnologyApiClient::ExternalApiTicketChangeItemApplyInfoModel](docs/ExternalApiTicketChangeItemApplyInfoModel.md)
+ - [GlobalEventTechnologyApiClient::ExternalApiTicketChangeItemChangeInfoModel](docs/ExternalApiTicketChangeItemChangeInfoModel.md)
+ - [GlobalEventTechnologyApiClient::ExternalApiTicketChangeItemChangeResultInfoModel](docs/ExternalApiTicketChangeItemChangeResultInfoModel.md)
+ - [GlobalEventTechnologyApiClient::ExternalApiTicketChangeItemInfoModel](docs/ExternalApiTicketChangeItemInfoModel.md)
  - [GlobalEventTechnologyApiClient::ExternalAreaModel](docs/ExternalAreaModel.md)
  - [GlobalEventTechnologyApiClient::ExternalChangeItemModel](docs/ExternalChangeItemModel.md)
- - [GlobalEventTechnologyApiClient::ExternalChangeModel](docs/ExternalChangeModel.md)
  - [GlobalEventTechnologyApiClient::ExternalChangeReferenceModel](docs/ExternalChangeReferenceModel.md)
  - [GlobalEventTechnologyApiClient::ExternalCreateFieldConfigModel](docs/ExternalCreateFieldConfigModel.md)
  - [GlobalEventTechnologyApiClient::ExternalDefaultProductVariantModel](docs/ExternalDefaultProductVariantModel.md)
@@ -1324,10 +1326,11 @@ Class | Method | HTTP request | Description
  - [GlobalEventTechnologyApiClient::ExternalSiteTicketTypeLabelModel](docs/ExternalSiteTicketTypeLabelModel.md)
  - [GlobalEventTechnologyApiClient::ExternalSiteTypeModel](docs/ExternalSiteTypeModel.md)
  - [GlobalEventTechnologyApiClient::ExternalTagBlacklistModel](docs/ExternalTagBlacklistModel.md)
+ - [GlobalEventTechnologyApiClient::ExternalTagChangeModel](docs/ExternalTagChangeModel.md)
+ - [GlobalEventTechnologyApiClient::ExternalTicketChangeModel](docs/ExternalTicketChangeModel.md)
  - [GlobalEventTechnologyApiClient::ExternalTicketModel](docs/ExternalTicketModel.md)
  - [GlobalEventTechnologyApiClient::ExternalTicketModelGenderTypeEnum](docs/ExternalTicketModelGenderTypeEnum.md)
  - [GlobalEventTechnologyApiClient::ExternalUpdateFieldConfigModel](docs/ExternalUpdateFieldConfigModel.md)
- - [GlobalEventTechnologyApiClient::ExternalUpdateTagServerStateModel](docs/ExternalUpdateTagServerStateModel.md)
  - [GlobalEventTechnologyApiClient::FieldModel](docs/FieldModel.md)
  - [GlobalEventTechnologyApiClient::FinanceModel](docs/FinanceModel.md)
  - [GlobalEventTechnologyApiClient::FlagValueField](docs/FlagValueField.md)
@@ -1342,12 +1345,10 @@ Class | Method | HTTP request | Description
  - [GlobalEventTechnologyApiClient::PublicTagStateModel](docs/PublicTagStateModel.md)
  - [GlobalEventTechnologyApiClient::SiteModel](docs/SiteModel.md)
  - [GlobalEventTechnologyApiClient::TagAssignmentModel](docs/TagAssignmentModel.md)
- - [GlobalEventTechnologyApiClient::TagAssignmentServerStateUpdateModel](docs/TagAssignmentServerStateUpdateModel.md)
  - [GlobalEventTechnologyApiClient::TagAssignmentStatusEnumModel](docs/TagAssignmentStatusEnumModel.md)
  - [GlobalEventTechnologyApiClient::TagAssignmentTypeEnumModel](docs/TagAssignmentTypeEnumModel.md)
  - [GlobalEventTechnologyApiClient::TagBlacklistModel](docs/TagBlacklistModel.md)
  - [GlobalEventTechnologyApiClient::TagOverviewModel](docs/TagOverviewModel.md)
- - [GlobalEventTechnologyApiClient::TagServerStateModel](docs/TagServerStateModel.md)
  - [GlobalEventTechnologyApiClient::TagSystemFlagsModel](docs/TagSystemFlagsModel.md)
  - [GlobalEventTechnologyApiClient::TaxRatesModel](docs/TaxRatesModel.md)
  - [GlobalEventTechnologyApiClient::TicketModel](docs/TicketModel.md)
