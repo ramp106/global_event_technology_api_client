@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **address_street** | **String** |  | [optional] 
 **address_postal_code** | **String** |  | [optional] 
 **address_city** | **String** |  | [optional] 
-**address_country** | **String** |  | [optional] 
+**address_country_iso** | **String** |  | [optional] 
 **vat_id** | **String** |  | [optional] 
 **gln** | **String** |  | [optional] 
 **steuernummer** | **String** |  | [optional] 

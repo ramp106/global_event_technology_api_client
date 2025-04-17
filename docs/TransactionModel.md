@@ -7,10 +7,11 @@ Name | Type | Description | Notes
 **site_id** | **String** |  | [optional] 
 **site_name** | **String** |  | [optional] 
 **unit_id** | **String** |  | [optional] 
+**unit_name** | **String** |  | [optional] 
 **total_credits_gross** | **String** |  | 
 **real_credits_gross** | **String** |  | 
 **gift_credits_gross** | **String** |  | 
-**items** | [**Array&lt;TransactionItemModel&gt;**](TransactionItemModel.md) |  | [optional] 
+**currency_value_gross** | **String** |  | 
 **operator** | [**TransactionOperatorModel**](TransactionOperatorModel.md) |  | [optional] 
 **status** | [**TransactionStatusEnumModel**](TransactionStatusEnumModel.md) |  | 
 **update_date** | **DateTime** |  | 
@@ -28,5 +29,4 @@ Name | Type | Description | Notes
 **ticket_validations** | [**Array&lt;TransactionTicketValidationModel&gt;**](TransactionTicketValidationModel.md) |  | [optional] 
 **finances** | [**Array&lt;FinanceModel&gt;**](FinanceModel.md) |  | [optional] 
 **payment** | [**PaymentModel**](PaymentModel.md) |  | [optional] 
-**unit_name** | **String** |  | [optional] 
 

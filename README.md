@@ -1354,7 +1354,6 @@ Class | Method | HTTP request | Description
  - [GlobalEventTechnologyApiClient::TicketModel](docs/TicketModel.md)
  - [GlobalEventTechnologyApiClient::TicketValidationModel](docs/TicketValidationModel.md)
  - [GlobalEventTechnologyApiClient::TransactionCompanyModel](docs/TransactionCompanyModel.md)
- - [GlobalEventTechnologyApiClient::TransactionItemModel](docs/TransactionItemModel.md)
  - [GlobalEventTechnologyApiClient::TransactionItemTypeEnumModel](docs/TransactionItemTypeEnumModel.md)
  - [GlobalEventTechnologyApiClient::TransactionModel](docs/TransactionModel.md)
  - [GlobalEventTechnologyApiClient::TransactionOperatorModel](docs/TransactionOperatorModel.md)
