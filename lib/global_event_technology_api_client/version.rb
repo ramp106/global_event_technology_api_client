@@ -10,5 +10,5 @@ Swagger Codegen version: 3.0.68
 =end
 
 module GlobalEventTechnologyApiClient
-  VERSION = '1.7.0'
+  VERSION = '1.8.0'
 end
