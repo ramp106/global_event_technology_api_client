@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **company** | **String** |  | [optional] 
 **iban** | **String** |  | [optional] 
 **bic** | **String** |  | [optional] 
+**transfer_text** | **String** |  | [optional] 
 **country_iso** | **String** |  | [optional] 
 **bank_account_number** | **String** |  | [optional] 
 **bank_number** | **String** |  | [optional] 

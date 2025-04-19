@@ -78,7 +78,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTagChangeApi.new
-body = GlobalEventTechnologyApiClient::ExternalChangeModel.new # ExternalChangeModel | 
+body = GlobalEventTechnologyApiClient::ExternalTagChangeModel.new # ExternalTagChangeModel | 
 project_id = 'project_id_example' # String | 
 external_reference = 'external_reference_example' # String | 
 
@@ -94,7 +94,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**ExternalChangeModel**](ExternalChangeModel.md)|  | 
+ **body** | [**ExternalTagChangeModel**](ExternalTagChangeModel.md)|  | 
  **project_id** | **String**|  | 
  **external_reference** | **String**|  | 
 
@@ -114,7 +114,7 @@ nil (empty response body)
 
 
 # **project_tag_change_get**
-> ExternalApiChangeInfoModel project_tag_change_get(project_id, external_reference)
+> ExternalApiTagChangeInfoModel project_tag_change_get(project_id, external_reference)
 
 
 
@@ -152,7 +152,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ExternalApiChangeInfoModel**](ExternalApiChangeInfoModel.md)
+[**ExternalApiTagChangeInfoModel**](ExternalApiTagChangeInfoModel.md)
 
 ### Authorization
 
@@ -166,7 +166,7 @@ Name | Type | Description  | Notes
 
 
 # **project_tag_change_get_all**
-> ArrayResultOfExternalApiChangeInfoModel project_tag_change_get_all(project_id, external_reference, opts)
+> ArrayResultOfExternalApiTagChangeInfoModel project_tag_change_get_all(project_id, external_reference, opts)
 
 
 
@@ -209,7 +209,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ArrayResultOfExternalApiChangeInfoModel**](ArrayResultOfExternalApiChangeInfoModel.md)
+[**ArrayResultOfExternalApiTagChangeInfoModel**](ArrayResultOfExternalApiTagChangeInfoModel.md)
 
 ### Authorization
 

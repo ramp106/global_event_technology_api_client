@@ -25,4 +25,5 @@ Name | Type | Description | Notes
 **city** | **String** |  | [optional] 
 **country** | **String** |  | [optional] 
 **source_name** | **String** |  | [optional] 
+**master_barcode** | **String** |  | [optional] 
 

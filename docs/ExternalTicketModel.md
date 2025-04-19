@@ -26,4 +26,5 @@ Name | Type | Description | Notes
 **country** | **String** |  | [optional] 
 **date_of_birth** | **String** |  | [optional] 
 **unit_id** | **String** |  | [optional] 
+**master_barcode** | **String** |  | [optional] 
 
