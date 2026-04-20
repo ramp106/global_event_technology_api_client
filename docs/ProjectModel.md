@@ -10,4 +10,3 @@ Name | Type | Description | Notes
 **begin_date** | **DateTime** |  | [optional] 
 **end_date** | **DateTime** |  | [optional] 
 
-

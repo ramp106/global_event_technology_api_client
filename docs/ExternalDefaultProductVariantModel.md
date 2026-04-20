@@ -12,4 +12,3 @@ Name | Type | Description | Notes
 **tax_rate** | **String** |  | [optional] 
 **accounting_category_name** | **String** |  | [optional] 
 
-

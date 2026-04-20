@@ -1,6 +1,6 @@
 # GlobalEventTechnologyApiClient::ProjectProductListProductsApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -12,9 +12,8 @@ Method | HTTP request | Description
 [**project_product_list_products_get_by_external_id**](ProjectProductListProductsApi.md#project_product_list_products_get_by_external_id) | **GET** /projects/{projectId}/product-lists/{productListId}/products/{productExternalId} | 
 [**project_product_list_products_set_default_variant**](ProjectProductListProductsApi.md#project_product_list_products_set_default_variant) | **POST** /projects/{projectId}/product-lists/{productListId}/products/{productExternalId}/set-default-variant | 
 
-
 # **project_product_list_products_create_or_update_product**
-> project_product_list_products_create_or_update_product(project_id, product_list_id, product_external_id, args)
+> project_product_list_products_create_or_update_product(bodyproject_idproduct_list_idproduct_external_id)
 
 
 
@@ -31,18 +30,14 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectProductListProductsApi.new
-
+body = GlobalEventTechnologyApiClient::ExternalProductModel.new # ExternalProductModel | 
 project_id = 'project_id_example' # String | 
-
 product_list_id = 'product_list_id_example' # String | 
-
 product_external_id = 'product_external_id_example' # String | 
-
-args = GlobalEventTechnologyApiClient::ExternalProductModel.new # ExternalProductModel | 
 
 
 begin
-  api_instance.project_product_list_products_create_or_update_product(project_id, product_list_id, product_external_id, args)
+  api_instance.project_product_list_products_create_or_update_product(bodyproject_idproduct_list_idproduct_external_id)
 rescue GlobalEventTechnologyApiClient::ApiError => e
   puts "Exception when calling ProjectProductListProductsApi->project_product_list_products_create_or_update_product: #{e}"
 end
@@ -52,10 +47,10 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **body** | [**ExternalProductModel**](ExternalProductModel.md)|  | 
  **project_id** | **String**|  | 
  **product_list_id** | **String**|  | 
  **product_external_id** | **String**|  | 
- **args** | [**ExternalProductModel**](ExternalProductModel.md)|  | 
 
 ### Return type
 
@@ -68,12 +63,12 @@ nil (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 
 
 # **project_product_list_products_create_or_update_product_variant**
-> project_product_list_products_create_or_update_product_variant(project_id, product_list_id, product_external_id, variant_external_id, args)
+> project_product_list_products_create_or_update_product_variant(bodyproject_idproduct_list_idproduct_external_idvariant_external_id)
 
 
 
@@ -90,20 +85,15 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectProductListProductsApi.new
-
+body = GlobalEventTechnologyApiClient::ExternalProductVariantModel.new # ExternalProductVariantModel | 
 project_id = 'project_id_example' # String | 
-
 product_list_id = 'product_list_id_example' # String | 
-
 product_external_id = 'product_external_id_example' # String | 
-
 variant_external_id = 'variant_external_id_example' # String | 
-
-args = GlobalEventTechnologyApiClient::ExternalProductVariantModel.new # ExternalProductVariantModel | 
 
 
 begin
-  api_instance.project_product_list_products_create_or_update_product_variant(project_id, product_list_id, product_external_id, variant_external_id, args)
+  api_instance.project_product_list_products_create_or_update_product_variant(bodyproject_idproduct_list_idproduct_external_idvariant_external_id)
 rescue GlobalEventTechnologyApiClient::ApiError => e
   puts "Exception when calling ProjectProductListProductsApi->project_product_list_products_create_or_update_product_variant: #{e}"
 end
@@ -113,11 +103,11 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **body** | [**ExternalProductVariantModel**](ExternalProductVariantModel.md)|  | 
  **project_id** | **String**|  | 
  **product_list_id** | **String**|  | 
  **product_external_id** | **String**|  | 
  **variant_external_id** | **String**|  | 
- **args** | [**ExternalProductVariantModel**](ExternalProductVariantModel.md)|  | 
 
 ### Return type
 
@@ -130,7 +120,7 @@ nil (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 
 
@@ -152,11 +142,8 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectProductListProductsApi.new
-
 project_id = 'project_id_example' # String | 
-
 product_list_id = 'product_list_id_example' # String | 
-
 product_external_id = 'product_external_id_example' # String | 
 
 
@@ -185,8 +172,8 @@ nil (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
 
 
 
@@ -208,13 +195,9 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectProductListProductsApi.new
-
 project_id = 'project_id_example' # String | 
-
 product_list_id = 'product_list_id_example' # String | 
-
 product_external_id = 'product_external_id_example' # String | 
-
 variant_external_id = 'variant_external_id_example' # String | 
 
 
@@ -244,8 +227,8 @@ nil (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
 
 
 
@@ -267,11 +250,8 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectProductListProductsApi.new
-
 project_id = 'project_id_example' # String | 
-
 product_list_id = 'product_list_id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example' # String | 
@@ -304,7 +284,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
@@ -327,11 +307,8 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectProductListProductsApi.new
-
 project_id = 'project_id_example' # String | 
-
 product_list_id = 'product_list_id_example' # String | 
-
 product_external_id = 'product_external_id_example' # String | 
 
 
@@ -361,13 +338,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
 
 # **project_product_list_products_set_default_variant**
-> project_product_list_products_set_default_variant(project_id, product_list_id, product_external_id, args)
+> project_product_list_products_set_default_variant(bodyproject_idproduct_list_idproduct_external_id)
 
 
 
@@ -384,18 +361,14 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectProductListProductsApi.new
-
+body = GlobalEventTechnologyApiClient::ExternalSetDefaultVariantModel.new # ExternalSetDefaultVariantModel | 
 project_id = 'project_id_example' # String | 
-
 product_list_id = 'product_list_id_example' # String | 
-
 product_external_id = 'product_external_id_example' # String | 
-
-args = GlobalEventTechnologyApiClient::ExternalSetDefaultVariantModel.new # ExternalSetDefaultVariantModel | 
 
 
 begin
-  api_instance.project_product_list_products_set_default_variant(project_id, product_list_id, product_external_id, args)
+  api_instance.project_product_list_products_set_default_variant(bodyproject_idproduct_list_idproduct_external_id)
 rescue GlobalEventTechnologyApiClient::ApiError => e
   puts "Exception when calling ProjectProductListProductsApi->project_product_list_products_set_default_variant: #{e}"
 end
@@ -405,10 +378,10 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **body** | [**ExternalSetDefaultVariantModel**](ExternalSetDefaultVariantModel.md)|  | 
  **project_id** | **String**|  | 
  **product_list_id** | **String**|  | 
  **product_external_id** | **String**|  | 
- **args** | [**ExternalSetDefaultVariantModel**](ExternalSetDefaultVariantModel.md)|  | 
 
 ### Return type
 
@@ -421,7 +394,7 @@ nil (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 
 

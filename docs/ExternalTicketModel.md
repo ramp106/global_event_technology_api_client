@@ -28,4 +28,3 @@ Name | Type | Description | Notes
 **unit_id** | **String** |  | [optional] 
 **master_barcode** | **String** |  | [optional] 
 
-

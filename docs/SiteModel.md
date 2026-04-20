@@ -12,4 +12,3 @@ Name | Type | Description | Notes
 **check_out_area_id** | **String** |  | [optional] 
 **status** | [**SiteStatusEnumModel**](SiteStatusEnumModel.md) |  | 
 
-

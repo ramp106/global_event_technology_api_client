@@ -15,4 +15,3 @@ Name | Type | Description | Notes
 **block_online** | **BOOLEAN** |  | [optional] 
 **note** | **String** |  | [optional] 
 
-

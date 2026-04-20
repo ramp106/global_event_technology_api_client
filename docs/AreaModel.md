@@ -14,4 +14,3 @@ Name | Type | Description | Notes
 **parent_area_id** | **String** |  | [optional] 
 **update_date** | **DateTime** |  | 
 
-

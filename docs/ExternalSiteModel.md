@@ -29,4 +29,3 @@ Name | Type | Description | Notes
 **tip_config_id** | **String** |  | [optional] 
 **enable_master_barcodes** | **BOOLEAN** |  | 
 
-

@@ -25,4 +25,3 @@ Name | Type | Description | Notes
 **seconds** | **Float** |  | [optional] 
 **rating** | **Integer** |  | [optional] 
 
-

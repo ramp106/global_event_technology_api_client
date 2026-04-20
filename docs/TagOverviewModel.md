@@ -7,4 +7,3 @@ Name | Type | Description | Notes
 **available_credits** | **String** |  | 
 **locked_credits** | **String** |  | 
 
-

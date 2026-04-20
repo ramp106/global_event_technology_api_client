@@ -14,4 +14,3 @@ Name | Type | Description | Notes
 **company_id** | **String** |  | [optional] 
 **company_name** | **String** |  | [optional] 
 
-

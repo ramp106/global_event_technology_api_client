@@ -15,4 +15,3 @@ Name | Type | Description | Notes
 **max_value** | **Integer** |  | 
 **update_date** | **DateTime** |  | 
 
-

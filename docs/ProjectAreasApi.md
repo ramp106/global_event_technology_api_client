@@ -1,6 +1,6 @@
 # GlobalEventTechnologyApiClient::ProjectAreasApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,9 +9,8 @@ Method | HTTP request | Description
 [**project_areas_get_all**](ProjectAreasApi.md#project_areas_get_all) | **GET** /projects/{projectId}/areas | 
 [**project_areas_get_by_id**](ProjectAreasApi.md#project_areas_get_by_id) | **GET** /projects/{projectId}/areas/{areaId} | 
 
-
 # **project_areas_create_or_update**
-> project_areas_create_or_update(project_id, area_id, args)
+> project_areas_create_or_update(bodyproject_idarea_id)
 
 
 
@@ -28,16 +27,13 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectAreasApi.new
-
+body = GlobalEventTechnologyApiClient::ExternalAreaModel.new # ExternalAreaModel | 
 project_id = 'project_id_example' # String | 
-
 area_id = 'area_id_example' # String | 
-
-args = GlobalEventTechnologyApiClient::ExternalAreaModel.new # ExternalAreaModel | 
 
 
 begin
-  api_instance.project_areas_create_or_update(project_id, area_id, args)
+  api_instance.project_areas_create_or_update(bodyproject_idarea_id)
 rescue GlobalEventTechnologyApiClient::ApiError => e
   puts "Exception when calling ProjectAreasApi->project_areas_create_or_update: #{e}"
 end
@@ -47,9 +43,9 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **body** | [**ExternalAreaModel**](ExternalAreaModel.md)|  | 
  **project_id** | **String**|  | 
  **area_id** | **String**|  | 
- **args** | [**ExternalAreaModel**](ExternalAreaModel.md)|  | 
 
 ### Return type
 
@@ -62,7 +58,7 @@ nil (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 
 
@@ -84,9 +80,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectAreasApi.new
-
 project_id = 'project_id_example' # String | 
-
 area_id = 'area_id_example' # String | 
 
 
@@ -114,8 +108,8 @@ nil (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
 
 
 
@@ -137,9 +131,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectAreasApi.new
-
 project_id = 'project_id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example' # String | 
@@ -171,7 +163,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
@@ -194,9 +186,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectAreasApi.new
-
 project_id = 'project_id_example' # String | 
-
 area_id = 'area_id_example' # String | 
 
 
@@ -225,7 +215,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 

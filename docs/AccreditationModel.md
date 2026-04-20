@@ -17,4 +17,3 @@ Name | Type | Description | Notes
 **worker_group_external_id** | **String** |  | [optional] 
 **additional_json_data** | **String** |  | [optional] 
 
-

@@ -1,6 +1,6 @@
 # GlobalEventTechnologyApiClient::ProjectFieldsApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,9 +9,8 @@ Method | HTTP request | Description
 [**project_fields_get_by_id**](ProjectFieldsApi.md#project_fields_get_by_id) | **GET** /projects/{projectId}/fields/{fieldConfigId} | 
 [**project_fields_update_field_config**](ProjectFieldsApi.md#project_fields_update_field_config) | **PUT** /projects/{projectId}/fields/{fieldConfigId} | 
 
-
 # **project_fields_create_field_config**
-> project_fields_create_field_config(project_id, field_config_id, args)
+> project_fields_create_field_config(bodyproject_idfield_config_id)
 
 
 
@@ -28,16 +27,13 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectFieldsApi.new
-
+body = GlobalEventTechnologyApiClient::ExternalCreateFieldConfigModel.new # ExternalCreateFieldConfigModel | 
 project_id = 'project_id_example' # String | 
-
 field_config_id = 'field_config_id_example' # String | 
-
-args = GlobalEventTechnologyApiClient::ExternalCreateFieldConfigModel.new # ExternalCreateFieldConfigModel | 
 
 
 begin
-  api_instance.project_fields_create_field_config(project_id, field_config_id, args)
+  api_instance.project_fields_create_field_config(bodyproject_idfield_config_id)
 rescue GlobalEventTechnologyApiClient::ApiError => e
   puts "Exception when calling ProjectFieldsApi->project_fields_create_field_config: #{e}"
 end
@@ -47,9 +43,9 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **body** | [**ExternalCreateFieldConfigModel**](ExternalCreateFieldConfigModel.md)|  | 
  **project_id** | **String**|  | 
  **field_config_id** | **String**|  | 
- **args** | [**ExternalCreateFieldConfigModel**](ExternalCreateFieldConfigModel.md)|  | 
 
 ### Return type
 
@@ -62,7 +58,7 @@ nil (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 
 
@@ -84,9 +80,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectFieldsApi.new
-
 project_id = 'project_id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example' # String | 
@@ -118,7 +112,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
@@ -141,9 +135,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectFieldsApi.new
-
 project_id = 'project_id_example' # String | 
-
 field_config_id = 'field_config_id_example' # String | 
 
 
@@ -172,13 +164,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
 
 # **project_fields_update_field_config**
-> project_fields_update_field_config(project_id, field_config_id, args)
+> project_fields_update_field_config(bodyproject_idfield_config_id)
 
 
 
@@ -195,16 +187,13 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectFieldsApi.new
-
+body = GlobalEventTechnologyApiClient::ExternalUpdateFieldConfigModel.new # ExternalUpdateFieldConfigModel | 
 project_id = 'project_id_example' # String | 
-
 field_config_id = 'field_config_id_example' # String | 
-
-args = GlobalEventTechnologyApiClient::ExternalUpdateFieldConfigModel.new # ExternalUpdateFieldConfigModel | 
 
 
 begin
-  api_instance.project_fields_update_field_config(project_id, field_config_id, args)
+  api_instance.project_fields_update_field_config(bodyproject_idfield_config_id)
 rescue GlobalEventTechnologyApiClient::ApiError => e
   puts "Exception when calling ProjectFieldsApi->project_fields_update_field_config: #{e}"
 end
@@ -214,9 +203,9 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **body** | [**ExternalUpdateFieldConfigModel**](ExternalUpdateFieldConfigModel.md)|  | 
  **project_id** | **String**|  | 
  **field_config_id** | **String**|  | 
- **args** | [**ExternalUpdateFieldConfigModel**](ExternalUpdateFieldConfigModel.md)|  | 
 
 ### Return type
 
@@ -229,7 +218,7 @@ nil (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 
 

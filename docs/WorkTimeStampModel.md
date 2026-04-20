@@ -21,4 +21,3 @@ Name | Type | Description | Notes
 **rating** | **Integer** |  | 
 **note** | **String** |  | [optional] 
 
-

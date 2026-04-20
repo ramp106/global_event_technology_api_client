@@ -21,4 +21,3 @@ Name | Type | Description | Notes
 **accounting_category_id** | **String** |  | [optional] 
 **accounting_category_name** | **String** |  | [optional] 
 
-

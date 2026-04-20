@@ -1,6 +1,6 @@
 # GlobalEventTechnologyApiClient::ProjectTicketsApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,9 +9,8 @@ Method | HTTP request | Description
 [**project_tickets_get_by_barcode**](ProjectTicketsApi.md#project_tickets_get_by_barcode) | **GET** /projects/{projectId}/tickets/byBarcode/{ticketBarcode} | 
 [**project_tickets_get_by_id**](ProjectTicketsApi.md#project_tickets_get_by_id) | **GET** /projects/{projectId}/tickets/byId/{ticketId} | 
 
-
 # **project_tickets_create_or_update**
-> project_tickets_create_or_update(project_id, args)
+> project_tickets_create_or_update(bodyproject_id)
 
 
 
@@ -28,14 +27,12 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTicketsApi.new
-
+body = GlobalEventTechnologyApiClient::ExternalTicketModel.new # ExternalTicketModel | 
 project_id = 'project_id_example' # String | 
-
-args = GlobalEventTechnologyApiClient::ExternalTicketModel.new # ExternalTicketModel | 
 
 
 begin
-  api_instance.project_tickets_create_or_update(project_id, args)
+  api_instance.project_tickets_create_or_update(bodyproject_id)
 rescue GlobalEventTechnologyApiClient::ApiError => e
   puts "Exception when calling ProjectTicketsApi->project_tickets_create_or_update: #{e}"
 end
@@ -45,8 +42,8 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **body** | [**ExternalTicketModel**](ExternalTicketModel.md)|  | 
  **project_id** | **String**|  | 
- **args** | [**ExternalTicketModel**](ExternalTicketModel.md)|  | 
 
 ### Return type
 
@@ -59,7 +56,7 @@ nil (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 
 
@@ -81,9 +78,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTicketsApi.new
-
 project_id = 'project_id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example' # String | 
@@ -115,7 +110,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
@@ -138,9 +133,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTicketsApi.new
-
 project_id = 'project_id_example' # String | 
-
 ticket_barcode = 'ticket_barcode_example' # String | 
 
 
@@ -169,7 +162,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
@@ -192,9 +185,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTicketsApi.new
-
 project_id = 'project_id_example' # String | 
-
 ticket_id = 'ticket_id_example' # String | 
 
 
@@ -223,7 +214,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 

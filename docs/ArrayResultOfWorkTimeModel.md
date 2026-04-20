@@ -7,4 +7,3 @@ Name | Type | Description | Notes
 **_next** | **String** |  | [optional] 
 **next_available** | **BOOLEAN** |  | 
 
-

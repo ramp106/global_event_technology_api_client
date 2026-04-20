@@ -11,4 +11,3 @@ Name | Type | Description | Notes
 **last_known_tag_state** | [**PublicTagStateModel**](PublicTagStateModel.md) |  | [optional] 
 **update_date** | **DateTime** |  | 
 
-

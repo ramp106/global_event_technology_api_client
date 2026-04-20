@@ -8,4 +8,3 @@ Name | Type | Description | Notes
 **area_id** | **String** |  | [optional] 
 **area_name** | **String** |  | [optional] 
 
-

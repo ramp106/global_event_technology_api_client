@@ -14,4 +14,3 @@ Name | Type | Description | Notes
 **product_list_id** | **String** |  | [optional] 
 **variants** | [**Array&lt;ProductVariantModel&gt;**](ProductVariantModel.md) |  | [optional] 
 
-

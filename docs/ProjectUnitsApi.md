@@ -1,12 +1,11 @@
 # GlobalEventTechnologyApiClient::ProjectUnitsApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**project_units_get_all**](ProjectUnitsApi.md#project_units_get_all) | **GET** /projects/{projectId}/units | 
 [**project_units_get_by_id**](ProjectUnitsApi.md#project_units_get_by_id) | **GET** /projects/{projectId}/units/{unitId} | 
-
 
 # **project_units_get_all**
 > ArrayResultOfUnitModel project_units_get_all(project_id, opts)
@@ -26,9 +25,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectUnitsApi.new
-
 project_id = 'project_id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example' # String | 
@@ -60,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
@@ -83,9 +80,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectUnitsApi.new
-
 project_id = 'project_id_example' # String | 
-
 unit_id = 'unit_id_example' # String | 
 
 
@@ -114,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 

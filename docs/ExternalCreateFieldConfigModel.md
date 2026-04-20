@@ -9,4 +9,3 @@ Name | Type | Description | Notes
 **type** | [**ExternalFieldsTypeEnum**](ExternalFieldsTypeEnum.md) |  | 
 **num_bits** | **Integer** |  | 
 
-

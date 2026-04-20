@@ -16,4 +16,3 @@ Name | Type | Description | Notes
 **worker_permission** | **BOOLEAN** |  | 
 **power_worker_permission** | **BOOLEAN** |  | 
 
-

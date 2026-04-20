@@ -18,4 +18,3 @@ Name | Type | Description | Notes
 **contact_email** | **String** |  | [optional] 
 **update_date** | **DateTime** |  | 
 
-

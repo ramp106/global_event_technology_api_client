@@ -1,13 +1,12 @@
 # GlobalEventTechnologyApiClient::ProjectTransactionsApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**project_transactions_get_all**](ProjectTransactionsApi.md#project_transactions_get_all) | **GET** /projects/{projectId}/transactions | 
 [**project_transactions_get_by_id**](ProjectTransactionsApi.md#project_transactions_get_by_id) | **GET** /projects/{projectId}/transactions/{transactionId} | 
 [**project_transactions_refund**](ProjectTransactionsApi.md#project_transactions_refund) | **POST** /projects/{projectId}/transactions/{transactionId}/refund | 
-
 
 # **project_transactions_get_all**
 > ArrayResultOfTransactionModel project_transactions_get_all(project_id, opts)
@@ -27,9 +26,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTransactionsApi.new
-
 project_id = 'project_id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example', # String | 
@@ -71,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
@@ -94,9 +91,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTransactionsApi.new
-
 project_id = 'project_id_example' # String | 
-
 transaction_id = 'transaction_id_example' # String | 
 
 
@@ -125,13 +120,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
 
 # **project_transactions_refund**
-> TransactionModel project_transactions_refund(project_id, transaction_id, request_model)
+> TransactionModel project_transactions_refund(bodyproject_idtransaction_id)
 
 
 
@@ -148,16 +143,13 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTransactionsApi.new
-
+body = GlobalEventTechnologyApiClient::ExternalRefundTransactionRequestModel.new # ExternalRefundTransactionRequestModel | 
 project_id = 'project_id_example' # String | 
-
 transaction_id = 'transaction_id_example' # String | 
-
-request_model = GlobalEventTechnologyApiClient::ExternalRefundTransactionRequestModel.new # ExternalRefundTransactionRequestModel | 
 
 
 begin
-  result = api_instance.project_transactions_refund(project_id, transaction_id, request_model)
+  result = api_instance.project_transactions_refund(bodyproject_idtransaction_id)
   p result
 rescue GlobalEventTechnologyApiClient::ApiError => e
   puts "Exception when calling ProjectTransactionsApi->project_transactions_refund: #{e}"
@@ -168,9 +160,9 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **body** | [**ExternalRefundTransactionRequestModel**](ExternalRefundTransactionRequestModel.md)|  | 
  **project_id** | **String**|  | 
  **transaction_id** | **String**|  | 
- **request_model** | [**ExternalRefundTransactionRequestModel**](ExternalRefundTransactionRequestModel.md)|  | 
 
 ### Return type
 

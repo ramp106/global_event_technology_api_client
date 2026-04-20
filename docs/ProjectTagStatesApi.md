@@ -1,13 +1,12 @@
 # GlobalEventTechnologyApiClient::ProjectTagStatesApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**project_tag_states_get_all**](ProjectTagStatesApi.md#project_tag_states_get_all) | **GET** /projects/{projectId}/tag-states | 
 [**project_tag_states_get_all_for_tag**](ProjectTagStatesApi.md#project_tag_states_get_all_for_tag) | **GET** /projects/{projectId}/tag-states/{tagNr} | 
 [**project_tag_states_get_for_tag_and_session_counter**](ProjectTagStatesApi.md#project_tag_states_get_for_tag_and_session_counter) | **GET** /projects/{projectId}/tag-states/{tagNr}/{sessionCounter} | 
-
 
 # **project_tag_states_get_all**
 > ArrayResultOfCurrentTagStateModel project_tag_states_get_all(project_id, opts)
@@ -27,9 +26,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTagStatesApi.new
-
 project_id = 'project_id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example' # String | 
@@ -61,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
@@ -84,11 +81,8 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTagStatesApi.new
-
 project_id = 'project_id_example' # String | 
-
 tag_nr = 'tag_nr_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example' # String | 
@@ -121,7 +115,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
@@ -144,11 +138,8 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTagStatesApi.new
-
 project_id = 'project_id_example' # String | 
-
 tag_nr = 'tag_nr_example' # String | 
-
 session_counter = 56 # Integer | 
 
 
@@ -178,7 +169,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 

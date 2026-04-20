@@ -1,12 +1,11 @@
 # GlobalEventTechnologyApiClient::ProjectCompaniesApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**project_companies_get_all**](ProjectCompaniesApi.md#project_companies_get_all) | **GET** /projects/{projectId}/companies | 
 [**project_companies_get_by_id**](ProjectCompaniesApi.md#project_companies_get_by_id) | **GET** /projects/{projectId}/companies/{companyId} | 
-
 
 # **project_companies_get_all**
 > ArrayResultOfCompanyModel project_companies_get_all(project_id, opts)
@@ -26,9 +25,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectCompaniesApi.new
-
 project_id = 'project_id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example' # String | 
@@ -60,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
@@ -83,9 +80,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectCompaniesApi.new
-
 project_id = 'project_id_example' # String | 
-
 company_id = 'company_id_example' # String | 
 
 
@@ -114,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 

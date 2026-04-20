@@ -24,4 +24,3 @@ Name | Type | Description | Notes
 **source_name** | **String** |  | [optional] 
 **master_barcode** | **String** |  | [optional] 
 
-

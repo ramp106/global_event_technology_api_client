@@ -9,4 +9,3 @@ Name | Type | Description | Notes
 **reference** | [**ExternalChangeReferenceModel**](ExternalChangeReferenceModel.md) |  | [optional] 
 **items** | [**Array&lt;ExternalChangeItemModel&gt;**](ExternalChangeItemModel.md) |  | [optional] 
 
-

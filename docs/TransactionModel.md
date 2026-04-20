@@ -29,4 +29,3 @@ Name | Type | Description | Notes
 **finances** | [**Array&lt;FinanceModel&gt;**](FinanceModel.md) |  | [optional] 
 **payment** | [**PaymentModel**](PaymentModel.md) |  | [optional] 
 
-

@@ -1,11 +1,10 @@
 # GlobalEventTechnologyApiClient::ProjectProductListsApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**project_product_lists_get_all**](ProjectProductListsApi.md#project_product_lists_get_all) | **GET** /projects/{projectId}/product-lists | 
-
 
 # **project_product_lists_get_all**
 > ArrayResultOfProductListModel project_product_lists_get_all(project_id, opts)
@@ -25,9 +24,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectProductListsApi.new
-
 project_id = 'project_id_example' # String | 
-
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example' # String | 
@@ -59,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 

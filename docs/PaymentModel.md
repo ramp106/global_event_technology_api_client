@@ -8,4 +8,3 @@ Name | Type | Description | Notes
 **brand** | **String** |  | [optional] 
 **variant** | **String** |  | [optional] 
 
-

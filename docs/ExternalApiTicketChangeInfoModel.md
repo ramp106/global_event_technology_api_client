@@ -12,4 +12,3 @@ Name | Type | Description | Notes
 **items** | [**Array&lt;ExternalApiTicketChangeItemInfoModel&gt;**](ExternalApiTicketChangeItemInfoModel.md) |  | [optional] 
 **applies** | [**Array&lt;ExternalApiTicketChangeItemApplyInfoModel&gt;**](ExternalApiTicketChangeItemApplyInfoModel.md) |  | [optional] 
 
-

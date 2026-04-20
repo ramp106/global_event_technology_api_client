@@ -8,4 +8,3 @@ Name | Type | Description | Notes
 **description** | **String** |  | [optional] 
 **utf8_string_value** | **String** |  | [optional] 
 
-

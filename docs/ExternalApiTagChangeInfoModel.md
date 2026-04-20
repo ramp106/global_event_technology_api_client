@@ -15,4 +15,3 @@ Name | Type | Description | Notes
 **status** | [**ExternalApiChangeInfoStatusEnumModel**](ExternalApiChangeInfoStatusEnumModel.md) |  | 
 **items** | [**Array&lt;ExternalApiChangeItemInfoModel&gt;**](ExternalApiChangeItemInfoModel.md) |  | [optional] 
 
-

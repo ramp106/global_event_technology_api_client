@@ -10,4 +10,3 @@ Name | Type | Description | Notes
 **applied_online** | **BOOLEAN** |  | 
 **tag_change_external_reference** | **String** |  | [optional] 
 
-
