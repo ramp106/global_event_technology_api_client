@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** |  | 
 **tag_session** | **String** |  | [optional] 
+**tag_sessions** | **Array&lt;String&gt;** |  | [optional] 
 **type** | [**TagAssignmentTypeEnumModel**](TagAssignmentTypeEnumModel.md) |  | 
 **status** | [**TagAssignmentStatusEnumModel**](TagAssignmentStatusEnumModel.md) |  | 
 **update_date** | **DateTime** |  | 

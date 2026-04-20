@@ -8,5 +8,4 @@ Name | Type | Description | Notes
 **city** | **String** |  | [optional] 
 **postcode** | **String** |  | [optional] 
 **country_iso** | **String** |  | [optional] 
-**country** | **String** |  | [optional] 
 

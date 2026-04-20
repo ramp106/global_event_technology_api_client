@@ -11,5 +11,6 @@ Name | Type | Description | Notes
 **parent_id** | **String** |  | [optional] 
 **parent_name** | **String** |  | [optional] 
 **manager_query** | **String** |  | [optional] 
+**company_id** | **String** |  | [optional] 
 **company_name** | **String** |  | [optional] 
 
