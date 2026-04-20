@@ -20,3 +20,4 @@ Name | Type | Description | Notes
 **generic_data** | **String** |  | [optional] 
 **update_date** | **DateTime** |  | 
 
+

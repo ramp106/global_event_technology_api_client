@@ -15,8 +15,7 @@ Name | Type | Description | Notes
 **operator** | [**TransactionOperatorModel**](TransactionOperatorModel.md) |  | [optional] 
 **status** | [**TransactionStatusEnumModel**](TransactionStatusEnumModel.md) |  | 
 **update_date** | **DateTime** |  | 
-**tag_nr** | **String** |  | [optional] 
-**session_counter** | **Integer** |  | [optional] 
+**tag_session** | **String** |  | [optional] 
 **company** | [**TransactionCompanyModel**](TransactionCompanyModel.md) |  | [optional] 
 **transaction_date** | **DateTime** |  | [optional] 
 **server_receive_date** | **DateTime** |  | 
@@ -29,4 +28,5 @@ Name | Type | Description | Notes
 **ticket_validations** | [**Array&lt;TransactionTicketValidationModel&gt;**](TransactionTicketValidationModel.md) |  | [optional] 
 **finances** | [**Array&lt;FinanceModel&gt;**](FinanceModel.md) |  | [optional] 
 **payment** | [**PaymentModel**](PaymentModel.md) |  | [optional] 
+
 

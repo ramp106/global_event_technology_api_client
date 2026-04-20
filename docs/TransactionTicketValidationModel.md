@@ -10,3 +10,4 @@ Name | Type | Description | Notes
 **ticket_validation_id** | **String** |  | [optional] 
 **ticket_valid** | **BOOLEAN** |  | [optional] 
 
+

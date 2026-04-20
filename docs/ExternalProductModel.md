@@ -8,3 +8,4 @@ Name | Type | Description | Notes
 **ean** | **String** |  | [optional] 
 **default_variant** | [**ExternalDefaultProductVariantModel**](ExternalDefaultProductVariantModel.md) |  | [optional] 
 
+

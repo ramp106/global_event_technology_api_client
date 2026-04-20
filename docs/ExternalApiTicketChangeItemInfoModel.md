@@ -9,3 +9,4 @@ Name | Type | Description | Notes
 **accounting_category** | **String** |  | [optional] 
 **changes** | [**Array&lt;ExternalApiTicketChangeItemChangeInfoModel&gt;**](ExternalApiTicketChangeItemChangeInfoModel.md) |  | [optional] 
 
+

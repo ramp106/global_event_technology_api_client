@@ -11,3 +11,4 @@ Name | Type | Description | Notes
 **counted_worker_types** | [**Array&lt;AreaCountedWorkerTypeEnum&gt;**](AreaCountedWorkerTypeEnum.md) |  | [optional] 
 **parent_area_id** | **String** |  | [optional] 
 
+

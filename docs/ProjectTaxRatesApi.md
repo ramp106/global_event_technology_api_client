@@ -1,10 +1,11 @@
 # GlobalEventTechnologyApiClient::ProjectTaxRatesApi
 
-All URIs are relative to */*
+All URIs are relative to *https://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**project_tax_rates_get_all**](ProjectTaxRatesApi.md#project_tax_rates_get_all) | **GET** /projects/{projectId}/tax-rates | 
+
 
 # **project_tax_rates_get_all**
 > ArrayResultOfTaxRatesModel project_tax_rates_get_all(project_id, opts)
@@ -24,7 +25,9 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTaxRatesApi.new
+
 project_id = 'project_id_example' # String | 
+
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example' # String | 
@@ -56,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 

@@ -10,4 +10,6 @@ Name | Type | Description | Notes
 **update_date** | **DateTime** |  | 
 **check_in_area_id** | **String** |  | [optional] 
 **check_out_area_id** | **String** |  | [optional] 
+**status** | [**SiteStatusEnumModel**](SiteStatusEnumModel.md) |  | 
+
 

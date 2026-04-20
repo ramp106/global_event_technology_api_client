@@ -10,3 +10,4 @@ Name | Type | Description | Notes
 **currency_value** | **String** |  | 
 **changes** | **Array&lt;Object&gt;** |  | [optional] 
 
+

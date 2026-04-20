@@ -1,11 +1,12 @@
 # GlobalEventTechnologyApiClient::ProjectWorkTimeStampsApi
 
-All URIs are relative to */*
+All URIs are relative to *https://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**project_work_time_stamps_get_all**](ProjectWorkTimeStampsApi.md#project_work_time_stamps_get_all) | **GET** /projects/{projectId}/work-time-stamps | 
 [**project_work_time_stamps_get_by_id**](ProjectWorkTimeStampsApi.md#project_work_time_stamps_get_by_id) | **GET** /projects/{projectId}/work-time-stamps/{workTimeStampId} | 
+
 
 # **project_work_time_stamps_get_all**
 > ArrayResultOfWorkTimeStampModel project_work_time_stamps_get_all(project_id, opts)
@@ -25,7 +26,9 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectWorkTimeStampsApi.new
+
 project_id = 'project_id_example' # String | 
+
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example' # String | 
@@ -57,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 
@@ -80,7 +83,9 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectWorkTimeStampsApi.new
+
 project_id = 'project_id_example' # String | 
+
 work_time_stamp_id = 'work_time_stamp_id_example' # String | 
 
 
@@ -109,7 +114,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 

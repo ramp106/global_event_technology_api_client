@@ -1,12 +1,13 @@
 # GlobalEventTechnologyApiClient::ProjectTicketValidationsApi
 
-All URIs are relative to */*
+All URIs are relative to *https://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**project_ticket_validations_get_all**](ProjectTicketValidationsApi.md#project_ticket_validations_get_all) | **GET** /projects/{projectId}/ticket-validations | 
 [**project_ticket_validations_get_by_barcode**](ProjectTicketValidationsApi.md#project_ticket_validations_get_by_barcode) | **GET** /projects/{projectId}/ticket-validations/byBarcode/{barcode} | 
 [**project_ticket_validations_get_by_ticket_id**](ProjectTicketValidationsApi.md#project_ticket_validations_get_by_ticket_id) | **GET** /projects/{projectId}/ticket-validations/byTicketId/{ticketId} | 
+
 
 # **project_ticket_validations_get_all**
 > ArrayResultOfTicketValidationModel project_ticket_validations_get_all(project_id, opts)
@@ -26,7 +27,9 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTicketValidationsApi.new
+
 project_id = 'project_id_example' # String | 
+
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example' # String | 
@@ -58,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 
@@ -81,8 +84,11 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTicketValidationsApi.new
+
 project_id = 'project_id_example' # String | 
+
 barcode = 'barcode_example' # String | 
+
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example' # String | 
@@ -115,7 +121,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 
@@ -138,8 +144,11 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTicketValidationsApi.new
+
 project_id = 'project_id_example' # String | 
+
 ticket_id = 'ticket_id_example' # String | 
+
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example' # String | 
@@ -172,7 +181,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 

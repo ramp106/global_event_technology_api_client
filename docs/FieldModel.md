@@ -11,5 +11,8 @@ Name | Type | Description | Notes
 **type** | [**ExternalFieldsTypeEnum**](ExternalFieldsTypeEnum.md) |  | 
 **start_bit** | **Integer** |  | 
 **num_bits** | **Integer** |  | 
+**min_value** | **Integer** |  | 
+**max_value** | **Integer** |  | 
 **update_date** | **DateTime** |  | 
+
 

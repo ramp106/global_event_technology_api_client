@@ -12,3 +12,4 @@ Name | Type | Description | Notes
 **tax_rate** | **String** |  | 
 **product_default_variant** | **BOOLEAN** |  | 
 
+

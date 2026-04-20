@@ -7,8 +7,6 @@ Name | Type | Description | Notes
 **update_date** | **DateTime** |  | 
 **unit_id** | **String** |  | 
 **worker_tag_session** | **String** |  | [optional] 
-**worker_given_name** | **String** |  | [optional] 
-**worker_family_name** | **String** |  | [optional] 
 **begin_stamp_id** | **String** |  | [optional] 
 **begin_date** | **DateTime** |  | [optional] 
 **begin_cost_center_id** | **String** |  | [optional] 
@@ -26,4 +24,5 @@ Name | Type | Description | Notes
 **hours** | **Float** |  | [optional] 
 **seconds** | **Float** |  | [optional] 
 **rating** | **Integer** |  | [optional] 
+
 

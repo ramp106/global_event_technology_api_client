@@ -11,8 +11,8 @@ Name | Type | Description | Notes
 **tag_change_id** | **String** |  | 
 **unit_id** | **String** |  | 
 **site_id** | **String** |  | 
-**reference** | [**ExternalChangeReferenceModel**](ExternalChangeReferenceModel.md) |  | [optional] 
 **cancellation_requested** | **BOOLEAN** |  | 
 **status** | [**ExternalApiChangeInfoStatusEnumModel**](ExternalApiChangeInfoStatusEnumModel.md) |  | 
 **items** | [**Array&lt;ExternalApiChangeItemInfoModel&gt;**](ExternalApiChangeItemInfoModel.md) |  | [optional] 
+
 

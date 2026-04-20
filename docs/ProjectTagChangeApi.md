@@ -1,6 +1,6 @@
 # GlobalEventTechnologyApiClient::ProjectTagChangeApi
 
-All URIs are relative to */*
+All URIs are relative to *https://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**project_tag_change_create**](ProjectTagChangeApi.md#project_tag_change_create) | **POST** /projects/{projectId}/tag-changes/{externalReference} | 
 [**project_tag_change_get**](ProjectTagChangeApi.md#project_tag_change_get) | **GET** /projects/{projectId}/tag-changes/{externalReference} | 
 [**project_tag_change_get_all**](ProjectTagChangeApi.md#project_tag_change_get_all) | **GET** /projects/{projectId}/tag-changes | 
+
 
 # **project_tag_change_cancel**
 > project_tag_change_cancel(project_id, external_reference)
@@ -27,7 +28,9 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTagChangeApi.new
+
 project_id = 'project_id_example' # String | 
+
 external_reference = 'external_reference_example' # String | 
 
 
@@ -55,13 +58,13 @@ nil (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 
 
 # **project_tag_change_create**
-> project_tag_change_create(bodyproject_idexternal_reference)
+> project_tag_change_create(project_id, external_reference, args)
 
 
 
@@ -78,13 +81,16 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTagChangeApi.new
-body = GlobalEventTechnologyApiClient::ExternalTagChangeModel.new # ExternalTagChangeModel | 
+
 project_id = 'project_id_example' # String | 
+
 external_reference = 'external_reference_example' # String | 
+
+args = GlobalEventTechnologyApiClient::ExternalTagChangeModel.new # ExternalTagChangeModel | 
 
 
 begin
-  api_instance.project_tag_change_create(bodyproject_idexternal_reference)
+  api_instance.project_tag_change_create(project_id, external_reference, args)
 rescue GlobalEventTechnologyApiClient::ApiError => e
   puts "Exception when calling ProjectTagChangeApi->project_tag_change_create: #{e}"
 end
@@ -94,9 +100,9 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**ExternalTagChangeModel**](ExternalTagChangeModel.md)|  | 
  **project_id** | **String**|  | 
  **external_reference** | **String**|  | 
+ **args** | [**ExternalTagChangeModel**](ExternalTagChangeModel.md)|  | 
 
 ### Return type
 
@@ -109,7 +115,7 @@ nil (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 
 
@@ -131,7 +137,9 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTagChangeApi.new
+
 project_id = 'project_id_example' # String | 
+
 external_reference = 'external_reference_example' # String | 
 
 
@@ -160,7 +168,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 
@@ -183,8 +191,11 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectTagChangeApi.new
+
 project_id = 'project_id_example' # String | 
+
 external_reference = 'external_reference_example' # String | 
+
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example' # String | 
@@ -217,7 +228,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 

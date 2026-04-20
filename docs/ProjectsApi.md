@@ -1,10 +1,11 @@
 # GlobalEventTechnologyApiClient::ProjectsApi
 
-All URIs are relative to */*
+All URIs are relative to *https://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**projects_get_all**](ProjectsApi.md#projects_get_all) | **GET** /projects | 
+
 
 # **projects_get_all**
 > ArrayResultOfProjectModel projects_get_all(opts)
@@ -24,6 +25,7 @@ GlobalEventTechnologyApiClient.configure do |config|
 end
 
 api_instance = GlobalEventTechnologyApiClient::ProjectsApi.new
+
 opts = { 
   limit: 56, # Integer | 
   _next: '_next_example' # String | 
@@ -54,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 
