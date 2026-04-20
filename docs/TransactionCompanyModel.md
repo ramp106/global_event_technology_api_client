@@ -7,5 +7,5 @@ Name | Type | Description | Notes
 **address_line1** | **String** |  | [optional] 
 **city** | **String** |  | [optional] 
 **postcode** | **String** |  | [optional] 
-**country** | **String** |  | [optional] 
+**country_iso** | **String** |  | [optional] 
 

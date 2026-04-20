@@ -3,6 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**link** | **String** |  | [optional] 
-**text** | **String** |  | [optional] 
+**internal_link_url** | **String** |  | [optional] 
+**title** | **String** |  | [optional] 
 
